@@ -1,0 +1,52 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAccordion/_sAccordion.pug
+include ../blocks/sCompare/_sCompare.pug
+include ../blocks/sSteps/_sSteps.pug
+include ../blocks/sPrises/_sPrises.pug
+include ../blocks/sRew/_sRew.pug
+include ../blocks/sCases/_sCases.pug
+include ../blocks/sBlog/_sBlog.pug
+
+block variables
+	- let  mainPage= 'bg-light' 
+	- let  bg= null
+
+block title
+	- let  title= 'step 3'
+	title= title
+block pagecontent 
+	//- +top-nav()
+	//- +headerBlock()
+	//- +sAccordion
+	//- +sAccordion
+	//- +sCompare
+	//- +sSteps
+	//- +sPrises
+	//- +sRew
+	//- +sAccordion
+	//- +sCases
+	//- +sBlog
+	+sForm()
+		.section-title.text-center
+			+e.step Шаг 3/3
+			h2 Настройка данных бота
+		+e.inner
+			+b.avatar-block
+				+e.img-wrap
+					+e.img
+				+e.caption Это может быть PNG, JPG или GIF файл.  <br> Размер файла до 2Мб
+			+input('Введите название','text','Название бота:')
+			+input('@taynayavecherya.bot','text','Имя бота:')(readonly value="@taynayavecherya.bot")
+			+input('Введите адрес вашего заведения','text','Адрес:')
+				.small Тестовый текст Колямбур Касперовский
+			+input('Выберите из списка','select','Часовой пояс:')
+			button.btn.btn-primary(type="submit") Отправить
+	+footer()
+      
+
+
+

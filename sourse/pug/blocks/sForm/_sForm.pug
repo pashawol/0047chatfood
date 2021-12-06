@@ -1,0 +1,19 @@
+mixin sForm()
+	// start sForm
+	+b.FORM.sForm.section#sForm&attributes(attributes)
+		.container
+			+b.form-wrap
+				if block 
+					block 
+				else
+					.section-title.text-center
+						+e.step Шаг 1/3
+						h2 Создайте чат-бота за&nbsp;5&nbsp;минут
+					+e.inner
+						+input('Введите ваше имя','text','Имя:')
+						+input('Введите ваш телефон','tel','Телефон:')
+						+input('Введите ваш E-mail','email',' E-mail:')
+						button.btn.btn-primary(type="submit") Продолжить
+						p.small.text-secondary.text-center Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;обработку своих персональных данных и&nbsp;соглашаетесь с&nbsp;пользовательским соглашением
+
+	// end sForm
