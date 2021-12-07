@@ -488,8 +488,14 @@ iframe {
 	// @include row-sw(10px, sm, 100px);
 }
 
-.btn{
-
+.btn-default{
+color: rgba(25, 28, 31, .5);
+}
+.btn-outline-primary{
+	&:active,
+	&:hover{
+		color: #fff !important;
+	}
 }
 
 .btn-primary,

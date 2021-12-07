@@ -47,6 +47,15 @@
 		.btn{
 			width: 100%;
 		}
+		&__footer{
+			// margin-left: auto;
+			// margin-right: auto;
+			text-align: center;
+			margin-top: rem(20);
+			opacity: 0.5;
+			font-size: rem(14);
+			line-height: 125%;
+		}
 	}
 
 	.avatar-block{
@@ -124,4 +133,8 @@
 				left: 0;
 			}
 		}
+	}
+
+	.form-control:disabled, .form-control[readonly]{
+		cursor: not-allowed;
 	}
