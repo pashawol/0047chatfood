@@ -3,7 +3,14 @@
 		// --sPT: ;
 		// --sPB: ;
 		// --sTPB: ;
+	&__item{
+		@include block(583, 320);
+		&:hover {
+			color: $success;
+		}
+		margin-bottom: 20px;
 
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -12,3 +19,57 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sRew
+
+.text-wrap {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	text-align: center;
+	color: $white;
+	&__play-button{
+		padding: 24px;
+		border-radius: 100%;
+		width: 70px;
+		height: 70px;
+		background: $primary;
+		margin: 0 auto 10px;
+	}
+}
+
+
+.duration{
+	text-align: center;
+	padding-bottom: 40px;
+	color: $success;
+}
+
+.review{
+	background: $light;
+	padding: 40px;
+	border-radius: 15px;
+	height: 320px;
+	position: relative;
+	.text{
+		font-size: 20px;
+	}
+	&__owner-wrapp{
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		position: absolute;
+		bottom: 40px; // Очень спорный момент, но у меня два варианта:
+									// такой или на флексах 
+	}
+	&__text-wrap{
+		margin-left: 15px;
+		.name{
+			color: $gray-900;
+			margin-bottom: 0;
+		}
+		.work{
+			color: $info;
+			margin-bottom: 0;
+		}
+	}
+}
+
