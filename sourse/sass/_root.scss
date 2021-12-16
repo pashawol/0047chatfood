@@ -8,10 +8,10 @@
 		--bs-body-font-size: #{$em-base};
 		--sPT: #{rem(80)};
 		--sPB: #{rem(90)};
-		--sTPB: #{rem(35)};
+		--sTPB: #{rem(60)};
 	}
 	
-	--sTPB: #{rem(35 * .5)};
+	--sTPB: 60px;
 	--sPT: #{rem(80 * .5)};
 	--sPB: #{rem(90 * .5)}; 
 

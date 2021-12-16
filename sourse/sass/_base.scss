@@ -126,6 +126,12 @@ body {
 
 .section-title {
 	margin-bottom: var(--sTPB);
+	h2{
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: rem(18);
+	}
 }
 
 
@@ -504,4 +510,17 @@ color: rgba(25, 28, 31, .5);
 }
 .btn-primary{
 	color: #fff !important;
+}
+
+.item-with-img{
+	text-align: center;
+
+	&__img{
+		margin: 20px auto 15px;
+		padding: 30px;
+		border-radius: 100%;
+		background: $light;
+		width: 100px;
+		height: 100px;
+	}
 }
