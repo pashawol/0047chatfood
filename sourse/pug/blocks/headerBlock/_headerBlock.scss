@@ -53,3 +53,23 @@
 }
 
 // end.headerBlock
+
+.section-title{
+	&__p{
+		margin: 20px 0 60px;
+		font-size: 18px;
+	}
+}
+
+.item{
+	text-align: center;
+
+	&__img{
+		margin: 20px auto 15px;
+		padding: 30px;
+		border-radius: 100%;
+		background: $light;
+		width: 100px;
+		height: 100px;
+	}
+}
