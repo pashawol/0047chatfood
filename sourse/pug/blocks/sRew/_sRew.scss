@@ -5,11 +5,16 @@
 		// --sTPB: ;
 	&__item{
 		@include block(583, 320);
+		background: linear-gradient(0deg, #191C1F, #191C1F);
+		img{
+			opacity: 0.8;
+		}
 		&:hover {
 			color: $success;
 		}
 		margin-bottom: 20px;
-
+		border-radius: 15px;
+		overflow: hidden;
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -21,11 +26,10 @@
 } // end.sRew
 
 .text-wrap {
-	position: absolute;
-	top: 50%;
-	left: 40%;
+	@include a-cent1;
 	text-align: center;
 	color: $white;
+	font-weight: 700;
 	&__play-button{
 		padding: 24px;
 		border-radius: 100%;
@@ -41,6 +45,7 @@
 	text-align: center;
 	padding-bottom: 40px;
 	color: $success;
+	font-weight: 700;
 }
 
 .review{
