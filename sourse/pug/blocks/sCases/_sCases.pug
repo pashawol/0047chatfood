@@ -3,7 +3,26 @@ mixin sCases(data)
 	+b.SECTION.sCases.section#sCases&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sCases
-				
-			.row
+				h2 Примеры чат-ботов на&nbsp;платформе ChatFood
+		+e.slider-wrapper
+			.container
+				.d-lg-block.d-none
+					+arrow
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin slide(i,t,a)
+							+e.slide.swiper-slide
+								+e.item
+									+pic(`logo-${i}.png`,'',0)
+									+e.title= t
+									p Уфа
+									+e.btn(href="#")
+										+icon("telegram")
+										= a
+						+slide(`1`,`Грин Доставка`,`Greenchatbot`)
+						+slide(`2`,`ЕДРЁН-БАТОН Доставка`,`EdrenBatonBot`)
+						+slide(`3`,`Прага Доставка`,`prahacafebot`)
+						+slide(`4`,`Сантоку Доставка`,`SantokuBot`)
+						+slide(`4`,`Сантоку Доставка`,`SantokuBot`)
+					.swiper-pagination
 	// end sCases

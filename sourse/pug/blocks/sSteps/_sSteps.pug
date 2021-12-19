@@ -7,13 +7,13 @@ mixin sSteps(data)
 				p Подключение чат-бота занимает меньше недели
 			.row
 				mixin item(i, p)
-					.col-sm-6.col-lg-3
+					+e.col.col-sm-6.col-lg-3
 						+b.item-with-img 
 							+e.img 
 								+pic(`step-${i}.png`,'','')
 							+e.text 
 								.h6= `${i} шаг`
-								p= p
+								div= p
 					// /.col-sm-6.col-lg-3
 				
 				+item('1','Оставляете заявку на сайте, с вами связывается менеджер для уточнения всех деталей, высылает договор.')

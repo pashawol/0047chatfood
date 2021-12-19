@@ -3,7 +3,29 @@ mixin sBlog(data)
 	+b.SECTION.sBlog.section#sBlog&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sBlog
-				
-			.row
+				h2 Блог
+			+e.btns-slider--js.swiper
+				.swiper-wrapper
+					.swiper-slide: +e.tab-btn(type="button").active  Все
+					.swiper-slide: +e.tab-btn(type="button") Обновления
+					.swiper-slide: +e.tab-btn(type="button") Новости
+					.swiper-slide: +e.tab-btn(type="button") Статьи
+			+e.slider.s-slider-js.swiper
+				.swiper-wrapper
+					mixin slide(i,t,a)
+						+e.slide.swiper-slide
+							+e.item
+								a(href="#").d-block
+									+pic(`news-1.jpg`,'bg',0)
+								p Работа с клиентом
+								+e.title
+									a(href="#") В WhatsApp Business API появились новые форматы промо-рассылок 
+								p.foot 3 сентября 2021
+					+slide()
+					+slide()
+					+slide()
+					+slide()
+					+slide()
+				.swiper-pagination
+			+e.btn.btn-outline-primary(href="#") Перейти в блог
 	// end sBlog

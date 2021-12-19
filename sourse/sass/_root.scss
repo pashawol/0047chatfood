@@ -6,17 +6,17 @@
 	@include media-breakpoint-up(sm) {
 		
 		--bs-body-font-size: #{$em-base};
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
+		--sPT: #{rem(50)};
+		--sPB: #{rem(50)};
 		--sTPB: #{rem(60)};
 	}
 	
 	--sTPB: 60px;
-	--sPT: #{rem(80 * .5)};
-	--sPB: #{rem(90 * .5)}; 
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)}; 
 
-		--swiperArrowSize: #{rem(68)};
-		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
+		--swiperArrowSize: #{rem(50)};
+		--swiperArrowPosition: 0;
 		--swiperBorderColorDef: var(--bs-primary);
 		--swiperColorDef: var(--bs-primary);
 		--swiperBgDef: #ffffff;
@@ -28,7 +28,7 @@
 
 	--fancybox-bg: rgba(24, 24, 27, .77);
 
-
+	
 
 	  //  --carousel-button-width: 48px;
 	  //  --carousel-button-height: 48px;

@@ -3,7 +3,65 @@
 		// --sPT: ;
 		// --sPB: ;
 		// --sTPB: ;
+		--sTPB: #{rem(56)};
+		text-align: center;
+		h2{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: rem(700);
+		}
+	&__table-scroll{
+		overflow-x: auto;
+		@extend .custom-scroll;
+		margin-bottom: rem(60);
+	}
+	&__table-wrap {
+		border: 1px solid #E8E8E8; 
+		border-radius: 8px;
+		min-width: 1178px;
+			@include media-breakpoint-down(xl) {
 
+				margin-bottom: 20px;
+			}
+		table{
+			margin: 0;
+			width: 100%;
+			line-height: 125%;
+		}
+		thead{
+		}
+		td,
+		th{
+			padding: rem(12);
+			width: 25%;
+			&:nth-child(2){
+				background: #F6F6F6;
+			}
+			&:first-child{
+				text-align: left;
+				padding-left: rem(20);
+			}
+			&:not(:last-child){
+				border-right: 1px solid #E8E8E8;
+			}
+		}
+	}
+	tbody {
+		th,
+		td{
+
+			border-top: 1px solid #E8E8E8;
+		}
+	}
+	&__btn{
+		@extend .btn, .btn-outline-primary;
+		width: rem(220);
+		margin-top: rem(25);
+	}
+	p{
+		// margin-left: auto;
+		// margin-right: auto;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

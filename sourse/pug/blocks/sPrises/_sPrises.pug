@@ -3,7 +3,26 @@ mixin sPrises(data)
 	+b.SECTION.sPrises.section#sPrises&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sPrises
-				
-			.row
+				h2 Тарифы
+				p Станьте одним из&nbsp;наших клиентов, который повысит прибыль в&nbsp;своих заведениях с&nbsp;помощью чат-бота в&nbsp;Telegram
+			+e.slider.s-slider-js.swiper
+				.swiper-wrapper
+					mixin item(m , p, pr,pr2, cl="btn-outline-primary")
+						+e.slide.swiper-slide
+							+e.item&attributes(attributes)
+								+e.head!= `Абонентская плата <span>${m}</span>`
+								if pr2
+									+e.price-lg= pr2
+								p!= p
+								+e.price
+									strong= pr 
+										|  ₽
+									|  /мес
+								+e.footer
+									+e.btn(href="#" class= cl) Отправить заявку
+							// /item
+					+item(`на 1 год`,`При оплате на&nbsp;год  вы&nbsp;экономите 14&nbsp;400&nbsp;₽`,` 2 500`,`30 000 ₽`,'btn-primary').active
+					+item(`на 6 месяцев`,`При оплате на&nbsp;пол года вы&nbsp;экономите 7&nbsp;200&nbsp;₽`,`3 100 `,`18 600 ₽`)
+					+item(`на 1 месяц`,`При оплате на&nbsp;пол года вы&nbsp;экономите 7&nbsp;200&nbsp;₽`,`3 700 `)
+				.swiper-pagination
 	// end sPrises

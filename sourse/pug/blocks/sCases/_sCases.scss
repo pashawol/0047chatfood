@@ -2,7 +2,75 @@
 .sCases {
 		// --sPT: ;
 		// --sPB: ;
-		// --sTPB: ;
+	
+		--sTPB: #{rem(56)};
+
+	h2{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: rem(600);
+	}
+	@include media-breakpoint-down(lg) {
+		&__slider{
+			overflow: visible;
+		}
+		}
+	&__slide{
+		height: auto;
+			@include media-breakpoint-down(lg) {
+				width: 330px;
+			}
+	}
+	&__item{
+		padding: rem(20);
+		border: 1px solid #E8E8E8; 
+		border-radius: 15px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		align-items: center;
+		text-align: center;
+		p{
+			margin-bottom: rem(15);
+		}
+	}
+	picture{
+		border-radius: 50%;
+		width: rem(100);
+		height: rem(100);
+		margin-bottom: rem(15);
+	}
+	&__title{
+		font-size: rem(18);
+		font-weight: bold;
+		margin-bottom: rem(10);
+		line-height: 125%;
+	}
+	&__btn{
+		@extend .btn;
+		&.btn-outline-primary{
+
+			width: 100%;
+			margin-top: auto;
+			font-size: rem(16);
+			font-weight: bold;
+			padding: rem(9);
+		}
+		.icon{
+			font-size: rem(20);
+			margin-right: rem(10);
+		}
+	}
+	&__slider-wrapper{
+		position: relative;
+		max-width: rem(1320);
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.swiper-button-hand{
+		top: rem(-54);
+	}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

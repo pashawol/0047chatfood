@@ -3,6 +3,12 @@
 		// --sPT: ;
 		// --sPB: ;
 		// --sTPB: ;
+		.row{
+			--bs-gutter-x: 18px;
+		}
+		p{
+			margin-bottom: 0;
+		}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

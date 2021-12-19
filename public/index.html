@@ -29,7 +29,7 @@
 		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page" data-bg="main-page">
+	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
 			<!-- start top-nav-->
 			<div class="top-nav block-with-lazy">
@@ -39,7 +39,7 @@
 							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 							</div>
 						</div>
-						<div class="col-auto"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
+						<div class="col-auto"><a href="/"><img src="img/svg/logo.svg" laoding="lazy" alt=""/></a>
 						</div>
 						<div class="col"></div>
 						<div class="col-auto">
@@ -57,14 +57,52 @@
 			<!-- start headerBlock-->
 			<div class="headerBlock section" id="headerBlock">
 				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-5">
+							<div class="section-title">
+								<h1>Чат-бот в&nbsp;Telegram с&nbsp;приемом платежей для ресторанов</h1>
+								<p>Подключите свой ресторан к&nbsp;ChatFood и&nbsp;получайте заказы на&nbsp;доставку и&nbsp;самовывоз через популярный мессенджер Telegram</p>
+							</div>
+							<a class="headerBlock__btn" href="#">Создать чат-бота
+							</a>
+						</div>
+						<div class="col">
+							<div class="headerBlock__video-wrap">
+								<video loading="lazy" preload="auto" no-controls="no-controls" autoplay="autoplay" loop="loop" playsinline="playsinline" muted="muted">
+									<source src="video/video.mp4" type="video/mp4"/>
+								</video>
+							</div>
+						</div>
+						<div class="headerBlock__col col-sm-auto">
+							<div class="headerBlock__item">
+								<div class="strong">36</div>
+								<p>Заказов в&nbsp;месяц в&nbsp;среднем получают наши клиенты через чат-бота</p>
+							</div>
+							<div class="headerBlock__item">
+								<div class="strong">0%</div>
+								<p>Вам не&nbsp;нужно отдавать процент с&nbsp;заказов</p>
+							</div>
+							<div class="headerBlock__item">
+								<div class="strong">5</div>
+								<p>Дней в&nbsp;среднем требуется на&nbsp;запуск чат-бота для ресторана</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end headerBlock-->
+			<!-- start sWhy-->
+			<section class="sWhy section" id="sWhy">
+				<div class="container">
 					<div class="section-title text-center">
 						<h2>Почему вам выгодно использовать чат-бота</h2>
-						<p>Заказ еды через мессенджер — будущее в сфере общепита</p>
+						<p class="section-title__p">Заказ еды через мессенджер — будущее в сфере общепита
+						</p>
 					</div>
 					<div class="row">
 								<div class="col-12 col-sm-6 col-lg-3">
-									<div class="item-with-img"> 
-										<div class="item-with-img__img"> 
+									<div class="item"> 
+										<div class="item__img"> 
 											<!-- picture-->
 											<picture> 
 												<source type="image/avif" srcset="img/@2x/avif/why-1.avif"/>
@@ -72,16 +110,15 @@
 											</picture>
 											<!-- /picture-->
 										</div>
-										<div class="item-with-img__text"> 
+										<div class="item__text"> 
 											<h6>Не платите комиссию сервису каждого заказа</h6>
-											<p class="item-with-img__p">Вы оплачиваете сервис за месяц, как абонентскую плату за интернет. Мы не берем комиссию с заказов или обращений, вся прибыль остается у вас
-											</p>
+											<p>Вы оплачиваете сервис за месяц, как абонентскую плату за интернет. Мы не берем комиссию с заказов или обращений, вся прибыль остается у вас</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 col-lg-3">
-									<div class="item-with-img"> 
-										<div class="item-with-img__img"> 
+									<div class="item"> 
+										<div class="item__img"> 
 											<!-- picture-->
 											<picture> 
 												<source type="image/avif" srcset="img/@2x/avif/why-2.avif"/>
@@ -89,16 +126,15 @@
 											</picture>
 											<!-- /picture-->
 										</div>
-										<div class="item-with-img__text"> 
+										<div class="item__text"> 
 											<h6>Не тратите деньги на разработку собственного сайта и приложения</h6>
-											<p class="item-with-img__p">Если у вас нет собственного сайтаи приложения, то вы экономите  на их разработке и поддержке — получаете решение ценностью не менее 60000₽, всего от 3700₽ в месяц.
-											</p>
+											<p>Если у вас нет собственного сайтаи приложения, то вы экономите  на их разработке и поддержке — получаете решение ценностью не менее 60000₽, всего от 3700₽ в месяц.</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 col-lg-3">
-									<div class="item-with-img"> 
-										<div class="item-with-img__img"> 
+									<div class="item"> 
+										<div class="item__img"> 
 											<!-- picture-->
 											<picture> 
 												<source type="image/avif" srcset="img/@2x/avif/why-3.avif"/>
@@ -106,16 +142,15 @@
 											</picture>
 											<!-- /picture-->
 										</div>
-										<div class="item-with-img__text"> 
+										<div class="item__text"> 
 											<h6>Ваши клиенты получают сервис с возможностью заказа еды через удобный мессенджер</h6>
-											<p class="item-with-img__p">Количество пользователей мессенджера Telegram растет с каждым днем, а вы получаете конкурентное преимущество, заказы и лояльность клиентов.
-											</p>
+											<p>Количество пользователей мессенджера Telegram растет с каждым днем, а вы получаете конкурентное преимущество, заказы и лояльность клиентов.</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-sm-6 col-lg-3">
-									<div class="item-with-img"> 
-										<div class="item-with-img__img"> 
+									<div class="item"> 
+										<div class="item__img"> 
 											<!-- picture-->
 											<picture> 
 												<source type="image/avif" srcset="img/@2x/avif/why-4.avif"/>
@@ -123,17 +158,362 @@
 											</picture>
 											<!-- /picture-->
 										</div>
-										<div class="item-with-img__text"> 
+										<div class="item__text"> 
 											<h6>НВашим клиентам не нужно скачивать приложение</h6>
-											<p class="item-with-img__p">Ваши клиенты один раз сканируют QR-код, который перенаправит их на чат-бота, авторизовавшись в котором один раз, они останутся с вами для будущих заказов.
-											</p>
+											<p>Ваши клиенты один раз сканируют QR-код, который перенаправит их на чат-бота, авторизовавшись в котором один раз, они останутся с вами для будущих заказов.</p>
 										</div>
 									</div>
 								</div>
 					</div>
 				</div>
+			</section>
+			<!-- end sWhy-->
+			<!-- start sAccordion-->
+			<div class="sAccordion section" id="sAccordion">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Функции  чат-бота для ваших клиентов</h2>
+						<p>Чат-бот в Telegram</p>
+					</div>
+					<div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-1.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Меню блюд</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Пользователь видит полный ассортимент меню, может добавлять блюда в&nbsp;корзину, выбирать количество и&nbsp;оформлять заказ.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-2.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Онлайн-оплата или оплата курьеру</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Ваш клиент может выбрать наиболее удобный для него способ оплаты из&nbsp;предложенных вами вариантов:</p>
+								<ul>
+									<li>онлайн-оплата через Telegram</li>
+									<li>оплата наличными курьеру</li>
+									<li>оплата картой курьеру</li>
+									<li>оплата при самовывозе.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-3.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Акции</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Ваш клиент может ознакомиться с&nbsp;акциями ресторана в&nbsp;специальном разделе и&nbsp;воспользоваться предложением: заказать доставку или прийти в&nbsp;ресторан.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-4.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Бонусная и реферальная система</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Пользователь получает бонусные баллы в&nbsp;следующих случаях:</p>
+								<ul> 
+									<li>за первую регистрацию в чат-боте</li>
+									<li>за&nbsp;приглашение друга в&nbsp;чат-бот вашего ресторана, в&nbsp;случае, если приглашенный оформит заказ</li>
+									<li>кешбэк в&nbsp;виде баллов с&nbsp;каждого заказа.</li>
+								</ul>
+								<p>Каждый параметр настраивается под ваш ресторан.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-5.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Оценка блюд из заказа</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>После каждого выполненного заказа чат-бот автоматически присылает клиенту список блюд из&nbsp;заказа на&nbsp;оценку.</p>
+								<p>Каждое блюдо оценивается по&nbsp;пятибальной системе, после чего пользователь получает кэшбек с&nbsp;заказа.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-6.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Бронирование стола</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Если в&nbsp;вашем ресторане предусмотрено бронирование столов, мы&nbsp;можем подключить эту функцию. Пользователь сможет узнать актуальную информацию о&nbsp;бронировании прямо в&nbsp;чат-боте.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-7.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Контакты и информация</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Контактная информация ресторана, адрес, социальные сети и&nbsp;карта с&nbsp;возможностью проложить маршрут в&nbsp;навигаторе или картах прямо в&nbsp;чат-боте.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!-- end headerBlock-->
+			<!-- end sAccordion-->
+			<!-- start sAccordion-->
+			<div class="sAccordion section" id="sAccordion">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Функции  CRM-системы </h2>
+						<p>Доступ ко всему функционалу через смартфон</p>
+					</div>
+					<div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-1.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Заказы</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js">
+								<p>Пользователь видит полный ассортимент меню, может добавлять блюда в&nbsp;корзину, выбирать количество и&nbsp;оформлять заказ.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-2.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Клиентская база</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js">
+								<p>Ваш клиент может выбрать наиболее удобный для него способ оплаты из&nbsp;предложенных вами вариантов:</p>
+								<ul>
+									<li>онлайн-оплата через Telegram</li>
+									<li>оплата наличными курьеру</li>
+									<li>оплата картой курьеру</li>
+									<li>оплата при самовывозе.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-3.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Меню блюд</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Ваш клиент может ознакомиться с&nbsp;акциями ресторана в&nbsp;специальном разделе и&nbsp;воспользоваться предложением: заказать доставку или прийти в&nbsp;ресторан.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-4.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Рассылки</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Пользователь получает бонусные баллы в&nbsp;следующих случаях:</p>
+								<ul> 
+									<li>за&nbsp;первую регистрацию в&nbsp;чат-боте</li>
+									<li>за&nbsp;приглашение друга в&nbsp;чат-бот вашего ресторана, в&nbsp;случае, если приглашенный оформит заказ</li>
+									<li>кешбэк в&nbsp;виде баллов с&nbsp;каждого заказа.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-5.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Аналитика</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>После каждого выполненного заказа чат-бот автоматически присылает клиенту список блюд из&nbsp;заказа на&nbsp;оценку.</p>
+								<p>Каждое блюдо оценивается по&nbsp;пятибальной системе, после чего пользователь получает кэшбек с&nbsp;заказа.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-6.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Бонусная и реферальная система</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Если в&nbsp;вашем ресторане предусмотрено бронирование столов, мы&nbsp;можем подключить эту функцию. Пользователь сможет узнать актуальную информацию о&nbsp;бронировании прямо в&nbsp;чат-боте.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col-auto">
+										<div class="accordion-item__img-wrap"><img src="img/svg/function-crm-7.svg" alt=""/>
+										</div>
+									</div>
+									<div class="col">Настройки</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Контактная информация ресторана, адрес, социальные сети и&nbsp;карта с&nbsp;возможностью проложить маршрут в&nbsp;навигаторе или картах прямо в&nbsp;чат-боте.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sAccordion-->
+			<!-- start sCompare-->
+			<section class="sCompare section" id="sCompare">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Сравните чат-бот с&nbsp;конкурентными решениями</h2>
+						<p>Мы&nbsp;учли все детали в&nbsp;сервисе, чтобы владельцы ресторанного бизнеса получали максимум пользы и&nbsp;поддержки</p>
+					</div>
+					<div class="sCompare__table-scroll">
+						<div class="sCompare__table-wrap">
+							<table>
+								<thead> 
+									<tr>
+										<th></th>
+										<th><img src="img/svg/logo.svg" alt="" laoding="lazy"/></th>
+										<th>Агрегатор</th>
+										<th>Свой сайт или мобильное приложение</th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+												<th>Комиссия</th>
+												<td>0%</td>
+												<td>30-40%</td>
+												<td>0%</td>
+											</tr>
+											<tr>
+												<th>Срок запуска</th>
+												<td>3-5 дней</td>
+												<td>7-14 дней</td>
+												<td>30+ дней</td>
+											</tr>
+											<tr>
+												<th>Потребность в программисте</th>
+												<td>Нет</td>
+												<td>Нет</td>
+												<td>Да</td>
+											</tr>
+											<tr>
+												<th>Стоимость разработки</th>
+												<td>3 700 ₽ /мес</td>
+												<td>-</td>
+												<td>от 60 000 ₽</td>
+											</tr>
+											<tr>
+												<th>Обновления и улучшения</th>
+												<td>Ежемесячно автоматически, при условии подписки</td>
+												<td>Зависят от агрегатора</td>
+												<td>от 30 000 ₽ /год</td>
+											</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<p>Для максимального эффекта вы можете использовать чат-бота для получения заказов паралельно с агрегаторами, своим сайтом или приложением.</p>
+					<a class="sCompare__btn" href="#">Создать чат-бота
+					</a>
+				</div>
+			</section>
+			<!-- end sCompare-->
 			<!-- start sSteps-->
 			<section class="sSteps section" id="sSteps">
 				<div class="container">
@@ -142,7 +522,7 @@
 						<p>Подключение чат-бота занимает меньше недели</p>
 					</div>
 					<div class="row">
-								<div class="col-sm-6 col-lg-3">
+								<div class="sSteps__col col-sm-6 col-lg-3">
 									<div class="item-with-img"> 
 										<div class="item-with-img__img"> 
 											<!-- picture-->
@@ -154,12 +534,12 @@
 										</div>
 										<div class="item-with-img__text"> 
 											<div class="h6">1 шаг</div>
-											<p>Оставляете заявку на сайте, с вами связывается менеджер для уточнения всех деталей, высылает договор.</p>
+											<div>Оставляете заявку на сайте, с вами связывается менеджер для уточнения всех деталей, высылает договор.</div>
 										</div>
 									</div>
 								</div>
 								<!-- /.col-sm-6.col-lg-3-->
-								<div class="col-sm-6 col-lg-3">
+								<div class="sSteps__col col-sm-6 col-lg-3">
 									<div class="item-with-img"> 
 										<div class="item-with-img__img"> 
 											<!-- picture-->
@@ -171,12 +551,12 @@
 										</div>
 										<div class="item-with-img__text"> 
 											<div class="h6">2 шаг</div>
-											<p>Создаем чат-бота, заполняем меню, предоставляем доступ в CRM-систему и рекламные материалы с QR-кодом.</p>
+											<div>Создаем чат-бота, заполняем меню, предоставляем доступ в CRM-систему и рекламные материалы с QR-кодом.</div>
 										</div>
 									</div>
 								</div>
 								<!-- /.col-sm-6.col-lg-3-->
-								<div class="col-sm-6 col-lg-3">
+								<div class="sSteps__col col-sm-6 col-lg-3">
 									<div class="item-with-img"> 
 										<div class="item-with-img__img"> 
 											<!-- picture-->
@@ -188,12 +568,12 @@
 										</div>
 										<div class="item-with-img__text"> 
 											<div class="h6">3 шаг</div>
-											<p>Размещаете QR-коды в вашем заведении, рассказываете о чат-боте в социальных сетях, кладете QR-коды в заказы.</p>
+											<div>Размещаете QR-коды в вашем заведении, рассказываете о чат-боте в социальных сетях, кладете QR-коды в заказы.</div>
 										</div>
 									</div>
 								</div>
 								<!-- /.col-sm-6.col-lg-3-->
-								<div class="col-sm-6 col-lg-3">
+								<div class="sSteps__col col-sm-6 col-lg-3">
 									<div class="item-with-img"> 
 										<div class="item-with-img__img"> 
 											<!-- picture-->
@@ -205,7 +585,7 @@
 										</div>
 										<div class="item-with-img__text"> 
 											<div class="h6">4 шаг</div>
-											<p>Ваши клиенты начинают заказывать доставку через чат-бота, пользоваться бонусной системой и приглашать друзей.</p>
+											<div>Ваши клиенты начинают заказывать доставку через чат-бота, пользоваться бонусной системой и приглашать друзей.</div>
 										</div>
 									</div>
 								</div>
@@ -214,6 +594,67 @@
 				</div>
 			</section>
 			<!-- end sSteps-->
+			<!-- start sPrises-->
+			<section class="sPrises section" id="sPrises">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Тарифы</h2>
+						<p>Станьте одним из&nbsp;наших клиентов, который повысит прибыль в&nbsp;своих заведениях с&nbsp;помощью чат-бота в&nbsp;Telegram</p>
+					</div>
+					<div class="sPrises__slider s-slider-js swiper">
+						<div class="swiper-wrapper">
+								<div class="sPrises__slide swiper-slide">
+									<div class="sPrises__item active">
+										<div class="sPrises__head">Абонентская плата <span>на 1 год</span>
+										</div>
+										<div class="sPrises__price-lg">30 000 ₽
+										</div>
+										<p>При оплате на&nbsp;год  вы&nbsp;экономите 14&nbsp;400&nbsp;₽</p>
+										<div class="sPrises__price"><strong> 2 500 ₽</strong> /мес
+										</div>
+										<div class="sPrises__footer">
+											<a class="sPrises__btn btn-primary" href="#">Отправить заявку
+											</a>
+										</div>
+									</div>
+									<!-- /item-->
+								</div>
+								<div class="sPrises__slide swiper-slide">
+									<div class="sPrises__item">
+										<div class="sPrises__head">Абонентская плата <span>на 6 месяцев</span>
+										</div>
+										<div class="sPrises__price-lg">18 600 ₽
+										</div>
+										<p>При оплате на&nbsp;пол года вы&nbsp;экономите 7&nbsp;200&nbsp;₽</p>
+										<div class="sPrises__price"><strong>3 100  ₽</strong> /мес
+										</div>
+										<div class="sPrises__footer">
+											<a class="sPrises__btn btn-outline-primary" href="#">Отправить заявку
+											</a>
+										</div>
+									</div>
+									<!-- /item-->
+								</div>
+								<div class="sPrises__slide swiper-slide">
+									<div class="sPrises__item">
+										<div class="sPrises__head">Абонентская плата <span>на 1 месяц</span>
+										</div>
+										<p>При оплате на&nbsp;пол года вы&nbsp;экономите 7&nbsp;200&nbsp;₽</p>
+										<div class="sPrises__price"><strong>3 700  ₽</strong> /мес
+										</div>
+										<div class="sPrises__footer">
+											<a class="sPrises__btn btn-outline-primary" href="#">Отправить заявку
+											</a>
+										</div>
+									</div>
+									<!-- /item-->
+								</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!-- end sPrises-->
 			<!-- start sRew-->
 			<section class="sRew section" id="sRew">
 				<div class="container">
@@ -221,8 +662,8 @@
 						<h2>Что говорят наши клиенты</h2>
 					</div>
 					<div class="row">
-						<div class="sRew__col col-6"> 
-							<a class="sRew__item bg-wrap" href="#" data-fancybox="data-fancybox">
+						<div class="sRew__col col-lg-6"> 
+							<a class="sRew__item bg-wrap" href="https://www.youtube.com/watch?v=zXsJJFeyyyQ" data-fancybox="data-fancybox">
 								<!-- picture-->
 								<picture class="picture-bg"> 
 									<source type="image/avif" srcset="img/@2x/avif/rew-1.avif"/>
@@ -239,8 +680,8 @@
 								</div>
 							</a>
 						</div>
-						<div class="sRew__col col-6"> 
-							<a class="sRew__item bg-wrap" href="#" data-fancybox="data-fancybox">
+						<div class="sRew__col col-lg-6"> 
+							<a class="sRew__item bg-wrap" href="https://www.youtube.com/watch?v=zXsJJFeyyyQ" data-fancybox="data-fancybox">
 								<!-- picture-->
 								<picture class="picture-bg"> 
 									<source type="image/avif" srcset="img/@2x/avif/rew-2.avif"/>
@@ -253,67 +694,400 @@
 									<p>Смотреть отзыв</p>
 								</div>
 								<div class="duration">
-									<p>Продолжительность видео 1:37</p>
+									<p>Продолжительность видео 1:37 </p>
 								</div>
 							</a>
 						</div>
+								<div class="col-lg-4">
+									<div class="review">
+										<p>С Jivo мы стали отвечать на вопросы посетителей, они перестали уходить с сайта, не разобравшись</p>
+										<div class="review__owner-wrapp">
+											<div class="row">
+												<div class="col-auto">
+													<!-- picture-->
+													<picture> 
+														<source type="image/avif" srcset="img/@2x/avif/owner-1.avif"/>
+														<source type="image/webp" srcset="img/@2x/webp/owner-1.webp"/><img src="img/@2x/owner-1.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="col">
+													<div class="review__text-wrap"> 
+														<div class="name">Джейме Ланнистер,</div>
+														<div class="work">владелец кафе &quot;Прага&quot;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="review">
+										<p>Благодаря Jivo количество лидов выросло на 70%, что привело к росту конверсий в сделки на 15%</p>
+										<div class="review__owner-wrapp">
+											<div class="row">
+												<div class="col-auto">
+													<!-- picture-->
+													<picture> 
+														<source type="image/avif" srcset="img/@2x/avif/owner-2.avif"/>
+														<source type="image/webp" srcset="img/@2x/webp/owner-2.webp"/><img src="img/@2x/owner-2.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="col">
+													<div class="review__text-wrap"> 
+														<div class="name">Джон Сноу,</div>
+														<div class="work">владелец кафе &quot;Сантоку&quot;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="review">
+										<p>Здорово, что в Jivo можно сразу работать с клиентами из разных каналов, это ускоряет процесс, а значит — позволяет лучше работать и продавать больше</p>
+										<div class="review__owner-wrapp">
+											<div class="row">
+												<div class="col-auto">
+													<!-- picture-->
+													<picture> 
+														<source type="image/avif" srcset="img/@2x/avif/owner-3.avif"/>
+														<source type="image/webp" srcset="img/@2x/webp/owner-3.webp"/><img src="img/@2x/owner-3.png" alt="" loading="lazy"/>
+													</picture>
+													<!-- /picture-->
+												</div>
+												<div class="col">
+													<div class="review__text-wrap"> 
+														<div class="name">Теон Грейджой,</div>
+														<div class="work">владелец кафе &quot;Едрён-Батон&quot;</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 					</div>
-					<div class="row"> 
-								<div class="col-4">
-									<div class="review">
-										<p class="text">С Jivo мы стали отвечать на вопросы посетителей, они перестали уходить с сайта, не разобравшись</p>
-										<div class="review__owner-wrapp"> 
-											<!-- picture-->
-											<picture> 
-												<source type="image/avif" srcset="img/@2x/avif/owner-1.avif"/>
-												<source type="image/webp" srcset="img/@2x/webp/owner-1.webp"/><img src="img/@2x/owner-1.png" alt="" loading="lazy"/>
-											</picture>
-											<!-- /picture-->
-											<div class="review__text-wrap"> 
-												<p class="name">Джейме Ланнистер,</p>
-												<p class="work">владелец кафе &quot;Прага&quot;</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-4">
-									<div class="review">
-										<p class="text">Благодаря Jivo количество лидов выросло на 70%, что привело к росту конверсий в сделки на 15%</p>
-										<div class="review__owner-wrapp"> 
-											<!-- picture-->
-											<picture> 
-												<source type="image/avif" srcset="img/@2x/avif/owner-2.avif"/>
-												<source type="image/webp" srcset="img/@2x/webp/owner-2.webp"/><img src="img/@2x/owner-2.png" alt="" loading="lazy"/>
-											</picture>
-											<!-- /picture-->
-											<div class="review__text-wrap"> 
-												<p class="name">Джон Сноу,</p>
-												<p class="work">владелец кафе &quot;Сантоку&quot;</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-4">
-									<div class="review">
-										<p class="text">Здорово, что в Jivo можно сразу работать с клиентами из разных каналов, это ускоряет процесс, а значит — позволяет лучше работать и продавать больше</p>
-										<div class="review__owner-wrapp"> 
-											<!-- picture-->
-											<picture> 
-												<source type="image/avif" srcset="img/@2x/avif/owner-3.avif"/>
-												<source type="image/webp" srcset="img/@2x/webp/owner-3.webp"/><img src="img/@2x/owner-3.png" alt="" loading="lazy"/>
-											</picture>
-											<!-- /picture-->
-											<div class="review__text-wrap"> 
-												<p class="name">Теон Грейджой,</p>
-												<p class="work">владелец кафе &quot;Едрён-Батон&quot;</p>
-											</div>
-										</div>
-									</div>
-								</div>
-					</div>
+					<button class="sRew__btn" type="button">Показать ещё
+					</button>
 				</div>
 			</section>
 			<!-- end sRew-->
+			<!-- start sAccordion-->
+			<div class="sAccordion section sAccordion sAccordion--faq" id="sAccordion">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Ответы на вопросы</h2>
+					</div>
+					<div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col">Как мы будем узнавать о новых заказах?</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>Вы будете получать заказы в удобной CRM-системе, а также уведомления о новых заказах в чат-боте.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col">Кто будет добавлять заказы?</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js">
+								<p>Доставлять заказы будут ваши курьеры, если у вас нет своих курьеров вы можете воспользоваться услугами Яндекс.Go, Ситимобил и пр.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col">Как изменить меню, цены, данные о ресторане после запуска чат-бота?</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js">
+								<p>Управление меню и ценами, информацией о ресторане будет доступно вам в CRM-системе в любое время.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col">Что делать, если закончились продукты для каких-либо блюд?</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js">
+								<p>Вы будете получать заказы в удобной CRM-системе, а также уведомления о новых заказах в чат-боте.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col">Возможна ли интеграция чат-бота с нашей системой управления ресторанов?</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js"> 
+								<p>У нас есть API, при необходимости вы можете интегрировать чат-бота со своей системой с помощью своего программиста или программиста вашей системы управления. Также мы можем предложить услуги по интеграции, стоимость и сроки интеграции зависят от вашей системы.</p>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div class="accordion-item__head dd-head-js">
+								<div class="row"> 
+									<div class="col">Какие платежные системы можно подключить для онлайн-оплаты в чат-боте?</div>
+								</div>
+								<svg class="icon icon-chevron-down ">
+									<use xlink:href="img/svg/sprite.svg#chevron-down"></use>
+								</svg>
+							</div>
+							<div class="accordion-item__content dd-content-js">
+								<p>Доставлять заказы будут ваши курьеры, если у вас нет своих курьеров вы можете воспользоваться услугами Яндекс.Go, Ситимобил и пр.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sAccordion-->
+			<!-- start sCases-->
+			<section class="sCases section" id="sCases">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Примеры чат-ботов на&nbsp;платформе ChatFood</h2>
+					</div>
+				</div>
+				<div class="sCases__slider-wrapper">
+					<div class="container">
+						<div class="d-lg-block d-none">
+							<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+								<svg class="icon icon-chevron-left ">
+									<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+								</svg>
+							</div>
+							<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+								<svg class="icon icon-chevron-right ">
+									<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="sCases__slider sCases__slider--js swiper">
+							<div class="swiper-wrapper">
+									<div class="sCases__slide swiper-slide">
+										<div class="sCases__item">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/logo-1.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/logo-1.webp"/><img src="img/@2x/logo-1.png" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture-->
+											<div class="sCases__title">Грин Доставка
+											</div>
+											<p>Уфа</p>
+											<a class="sCases__btn" href="#">
+												<svg class="icon icon-telegram ">
+													<use xlink:href="img/svg/sprite.svg#telegram"></use>
+												</svg>Greenchatbot
+											</a>
+										</div>
+									</div>
+									<div class="sCases__slide swiper-slide">
+										<div class="sCases__item">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/logo-2.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/logo-2.webp"/><img src="img/@2x/logo-2.png" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture-->
+											<div class="sCases__title">ЕДРЁН-БАТОН Доставка
+											</div>
+											<p>Уфа</p>
+											<a class="sCases__btn" href="#">
+												<svg class="icon icon-telegram ">
+													<use xlink:href="img/svg/sprite.svg#telegram"></use>
+												</svg>EdrenBatonBot
+											</a>
+										</div>
+									</div>
+									<div class="sCases__slide swiper-slide">
+										<div class="sCases__item">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/logo-3.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/logo-3.webp"/><img src="img/@2x/logo-3.png" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture-->
+											<div class="sCases__title">Прага Доставка
+											</div>
+											<p>Уфа</p>
+											<a class="sCases__btn" href="#">
+												<svg class="icon icon-telegram ">
+													<use xlink:href="img/svg/sprite.svg#telegram"></use>
+												</svg>prahacafebot
+											</a>
+										</div>
+									</div>
+									<div class="sCases__slide swiper-slide">
+										<div class="sCases__item">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/logo-4.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/logo-4.webp"/><img src="img/@2x/logo-4.png" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture-->
+											<div class="sCases__title">Сантоку Доставка
+											</div>
+											<p>Уфа</p>
+											<a class="sCases__btn" href="#">
+												<svg class="icon icon-telegram ">
+													<use xlink:href="img/svg/sprite.svg#telegram"></use>
+												</svg>SantokuBot
+											</a>
+										</div>
+									</div>
+									<div class="sCases__slide swiper-slide">
+										<div class="sCases__item">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/logo-4.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/logo-4.webp"/><img src="img/@2x/logo-4.png" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture-->
+											<div class="sCases__title">Сантоку Доставка
+											</div>
+											<p>Уфа</p>
+											<a class="sCases__btn" href="#">
+												<svg class="icon icon-telegram ">
+													<use xlink:href="img/svg/sprite.svg#telegram"></use>
+												</svg>SantokuBot
+											</a>
+										</div>
+									</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sCases-->
+			<!-- start sBlog-->
+			<section class="sBlog section" id="sBlog">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Блог</h2>
+					</div>
+					<div class="sBlog__btns-slider sBlog__btns-slider--js swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<button class="sBlog__tab-btn active" type="button"> Все
+								</button>
+							</div>
+							<div class="swiper-slide">
+								<button class="sBlog__tab-btn" type="button">Обновления
+								</button>
+							</div>
+							<div class="swiper-slide">
+								<button class="sBlog__tab-btn" type="button">Новости
+								</button>
+							</div>
+							<div class="swiper-slide">
+								<button class="sBlog__tab-btn" type="button">Статьи
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="sBlog__slider s-slider-js swiper">
+						<div class="swiper-wrapper">
+								<div class="sBlog__slide swiper-slide">
+									<div class="sBlog__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/news-1.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/news-1.webp"/><img class="object-fit-js" src="img/@2x/news-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
+										<p>Работа с клиентом</p>
+										<div class="sBlog__title"><a href="#">В WhatsApp Business API появились новые форматы промо-рассылок </a>
+										</div>
+										<p class="foot">3 сентября 2021</p>
+									</div>
+								</div>
+								<div class="sBlog__slide swiper-slide">
+									<div class="sBlog__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/news-1.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/news-1.webp"/><img class="object-fit-js" src="img/@2x/news-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
+										<p>Работа с клиентом</p>
+										<div class="sBlog__title"><a href="#">В WhatsApp Business API появились новые форматы промо-рассылок </a>
+										</div>
+										<p class="foot">3 сентября 2021</p>
+									</div>
+								</div>
+								<div class="sBlog__slide swiper-slide">
+									<div class="sBlog__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/news-1.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/news-1.webp"/><img class="object-fit-js" src="img/@2x/news-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
+										<p>Работа с клиентом</p>
+										<div class="sBlog__title"><a href="#">В WhatsApp Business API появились новые форматы промо-рассылок </a>
+										</div>
+										<p class="foot">3 сентября 2021</p>
+									</div>
+								</div>
+								<div class="sBlog__slide swiper-slide">
+									<div class="sBlog__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/news-1.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/news-1.webp"/><img class="object-fit-js" src="img/@2x/news-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
+										<p>Работа с клиентом</p>
+										<div class="sBlog__title"><a href="#">В WhatsApp Business API появились новые форматы промо-рассылок </a>
+										</div>
+										<p class="foot">3 сентября 2021</p>
+									</div>
+								</div>
+								<div class="sBlog__slide swiper-slide">
+									<div class="sBlog__item"><a class="d-block" href="#">
+											<!-- picture-->
+											<picture> 
+												<source type="image/avif" srcset="img/@2x/avif/news-1.avif"/>
+												<source type="image/webp" srcset="img/@2x/webp/news-1.webp"/><img class="object-fit-js" src="img/@2x/news-1.jpg" alt="" loading="lazy"/>
+											</picture>
+											<!-- /picture--></a>
+										<p>Работа с клиентом</p>
+										<div class="sBlog__title"><a href="#">В WhatsApp Business API появились новые форматы промо-рассылок </a>
+										</div>
+										<p class="foot">3 сентября 2021</p>
+									</div>
+								</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<a class="sBlog__btn btn-outline-primary" href="#">Перейти в блог
+					</a>
+				</div>
+			</section>
+			<!-- end sBlog-->
 			<!-- start sForm-->
 			<form class="sForm section" id="sForm">
 				<div class="container">
@@ -350,10 +1124,86 @@
 			<footer class="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col-auto"></div>
+						<div class="col-xl-3 col-lg-auto">
+							<div class="footer__logo"><a href="/"><img src="img/svg/logo.svg" laoding="lazy" alt=""/></a>
+							</div>
+							<div class="footer__copy">© 2021 «ChatFood.ru».
+							</div>
+							<div class="soc">
+								<a class="soc__item soc__item soc__item--instagram" href="#" target="_blank">
+									<svg class="icon icon-instagram ">
+										<use xlink:href="img/svg/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+								<a class="soc__item soc__item soc__item--vk" href="#" target="_blank">
+									<svg class="icon icon-vk ">
+										<use xlink:href="img/svg/sprite.svg#vk"></use>
+									</svg>
+								</a>
+								<a class="soc__item soc__item soc__item--telegram2" href="#" target="_blank">
+									<svg class="icon icon-telegram2 ">
+										<use xlink:href="img/svg/sprite.svg#telegram2"></use>
+									</svg>
+								</a>
+								<a class="soc__item soc__item soc__item--twitter" href="#" target="_blank">
+									<svg class="icon icon-twitter ">
+										<use xlink:href="img/svg/sprite.svg#twitter"></use>
+									</svg>
+								</a>
+								<a class="soc__item soc__item soc__item--facebook" href="#" target="_blank">
+									<svg class="icon icon-facebook ">
+										<use xlink:href="img/svg/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-auto d-none d-lg-block">
+							<div class="footer__title">Основные разделы
+							</div>
+							<ul> 
+								<li><a href="#">Ресторанам</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</div>
+						<div class="col-lg">
+							<div class="footer__title">Юриидческая информация
+							</div>
+							<ul> 
+								<li><a href="#">Реквизиты компании</a></li>
+								<li><a href="#">Политика конфиденциальности</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+								<li><a href="#">Публичная оферта</a></li>
+							</ul>
+						</div>
+						<div class="footer__col col-lg-auto">
+							<div class="footer__btns">
+								<a class="footer__btn btn-light" href="#">Вход в сервис
+								</a>
+								<a class="footer__btn btn-outline-primary" href="#">Подключиться
+								</a>
+							</div>
+							<div class="footer__contacts"><a href="#"> <img src="img/svg/telegram.svg" alt=""/></a><a href="#"> <img src="img/svg/whatsapp.svg" alt=""/></a>
+								<a class="footer__tel" href="tel:+7(995)966-98-88"> +7 (995) 966-98-88
+								</a>
+							</div>
+							<p>г. Самара, ул. Партизанская 86,оф. 727 </p>
+							<a class="footer__mail" href="mailto:info@chatfood.ru">info@chatfood.ru
+							</a><br/>
+							<div class="footer__btn-top"> <span class="text-btn">Наверх</span>
+								<div class="footer__circle"> 
+									<svg class="icon icon-chevron-up ">
+										<use xlink:href="img/svg/sprite.svg#chevron-up"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="row"> 
+							<div class="col">© 2021 «ChatFood.ru».</div>
+							<div class="col-sm-auto">Сделано в <a class="strong text-body" href="#">Workes </a></div>
+						</div>
 					</div>
 				</div>
 			</footer>

@@ -12,10 +12,22 @@
 		&:hover {
 			color: $success;
 		}
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		border-radius: 15px;
 		overflow: hidden;
 	}
+	&__btn{
+		@extend .btn, .btn-outline-primary;
+		width: rem(220);
+		margin-top: rem(35);
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.row{
+		--bs-gutter-y: 24px;
+	}
+	
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -30,11 +42,15 @@
 	text-align: center;
 	color: $white;
 	font-weight: 700;
-	&__play-button{
-		padding: 24px;
+	font-size: rem(18);
+	padding-top: rem(35);
+	&__play-button{ 
 		border-radius: 100%;
-		width: 70px;
-		height: 70px;
+		width: rem(70px);
+		height: rem(70px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: $primary;
 		margin: 0 auto 10px;
 	}
@@ -43,30 +59,40 @@
 
 .duration{
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 3%;
 	color: $success;
 	font-weight: 700;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 .review{
 	background: $light;
-	padding: 40px;
-	border-radius: 15px;
-	height: 320px;
+	padding: rem(40px);
+	border-radius: rem(15px);
+	@include media-breakpoint-up(lg) {
+		min-height: 320px;
+	}
 	position: relative;
-	.text{
-		font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	p {
+		font-size: rem(20px);
+		font-size: rem(20);
+		line-height: 125%;
+		font-weight: 600;
+		margin-bottom: 40px;
+	}
+	.row{
+		align-items: center;
 	}
 	&__owner-wrapp{
-		display: flex;
-		align-items: center;
-		font-size: 16px;
-		position: absolute;
-		bottom: 40px; // Очень спорный момент, но у меня два варианта:
-									// такой или на флексах 
+			margin-top: auto;
 	}
-	&__text-wrap{
-		margin-left: 15px;
+	&__text-wrap{ 
 		.name{
 			color: $gray-900;
 			margin-bottom: 0;

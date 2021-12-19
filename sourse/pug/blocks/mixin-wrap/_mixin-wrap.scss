@@ -1,7 +1,7 @@
  
 	  
 .soc{
-	@include roww(10px, m);
+	@include roww(5px, m);
 	display: flex;
 	&__item{
 		text-decoration: none !important; 
@@ -9,14 +9,43 @@
 		@include mt;
 		display: grid;
 		place-items: center;
+		width: rem(30);
+		height: rem(30);
+		border-radius: 50%;
+		background-color: var(--bg, var(--bs-primary));
+		color: #fff !important;
+		&:hover{
+			background-color: var(--bg-hover);
+		}
 		&:hover{
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			// opacity: .6 ;
 		}
+		&--instagram{
+			--bg: #E1306C;
+			--bg-hover: #ce084a;
+		}
 		
+		&--vk{
+			--bg: #0077FF;
+			--bg-hover: #1068cc;
+		}
+		&--telegram2{
+			--bg: #2FA6D9;
+			--bg-hover: #0b76a3;
+		}
+		&--twitter{
+			--bg: #1DA1F2;
+			--bg-hover: #0679c0;
+		}
+		&--facebook{
+			--bg: #4267B2;
+			--bg-hover: #274279;
+		}
+
 	}
 	.icon{
-		font-size: rem(30);
+		font-size: rem(16);
 	}
 
 

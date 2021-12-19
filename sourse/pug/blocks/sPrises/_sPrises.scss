@@ -3,6 +3,83 @@
 		// --sPT: ;
 		// --sPB: ;
 		// --sTPB: ;
+		&__slider{
+			overflow: visible
+		}
+		@include media-breakpoint-up(xl) {
+			
+			.swiper-wrapper{
+				@include roww(20px);
+				width: calc(100% + 20px);
+				transform: none !important;
+			}
+			.swiper-pagination{
+				display: none;
+			}
+		}
+		&__slide{
+			@include media-breakpoint-down(xl) {
+				margin-right: rem(20);
+			}
+			width: calc(100% / 3);
+			min-width: rem(336);
+			height: auto;
+		}
+
+		&__item{
+			display: flex;
+			flex-direction: column;
+			&.active{
+				// background: #E8E8E8; 
+				background: #F6F6F6;
+				border-color: #F6F6F6;
+			}
+			text-align: center;
+			min-height: 100%;
+			background: #FFFFFF;
+			border: 1px solid #E8E8E8; 
+			border-radius: 15px;
+			padding: rem(40);
+			p{
+				font-size: rem(16px);
+				line-height: 125%;
+				margin-bottom: rem(37);
+				margin-left: auto;
+				margin-right: auto;
+				max-width: rem(220);
+
+			}
+		}
+		&__head{
+			font-size: rem(18px);
+			line-height: 125%;
+			margin-bottom: rem(15);
+			span{
+				color: $primary;
+				display: inline-block;
+			}
+		}
+		&__price{
+
+			line-height: 125%;
+			vertical-align: bottom;
+			padding-bottom: rem(25);
+			margin-bottom: auto;
+				strong{
+					font-size:  rem(40);
+				}
+		}
+		&__price-lg{
+			font-size: rem(26);
+			font-weight: bold;
+			line-height: 125%;
+			margin-bottom: rem(20);
+		}
+		&__btn{
+			@extend .btn;
+			max-width: rem(300);
+			width: 100%;
+		}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

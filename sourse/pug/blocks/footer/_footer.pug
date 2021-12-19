@@ -2,8 +2,46 @@ mixin footer()
 	+b.FOOTER.footer
 		.container
 			.row
-				.col
+				.col-xl-3.col-lg-auto
+					+e.logo
+						+logo
+					+e.copy © 2021 «ChatFood.ru».
+					+soc
 					
-				.col
-				.col
-				.col-auto
+				.col-xl-2.col-lg-auto.d-none.d-lg-block
+					+e.title Основные разделы
+					ul 
+						li: a(href="#") Ресторанам
+						li: a(href="#") Блог
+						li: a(href="#") API
+				.col-lg
+					+e.title Юриидческая информация
+					ul 
+						li: a(href="#") Реквизиты компании
+						li: a(href="#") Политика конфиденциальности
+						li: a(href="#") Пользовательское соглашение
+						li: a(href="#") Публичная оферта
+				+e.col.col-lg-auto
+					+e.btns
+						+e.btn.btn-light(href="#") Вход в сервис
+						+e.btn.btn-outline-primary(href="#") Подключиться
+					+e.contacts
+						a(href="#")  
+							img(src="img/svg/telegram.svg", alt="")
+						a(href="#")  
+							img(src="img/svg/whatsapp.svg", alt="") 
+						+e.tel(href="tel:+7(995)966-98-88")  +7 (995) 966-98-88
+					p г. Самара, ул. Партизанская 86,оф. 727 
+					+e.mail(href="mailto:info@chatfood.ru") info@chatfood.ru
+					br
+					+e.btn-top 
+						span.text-btn Наверх
+						+e.circle 
+							+icon("chevron-up")
+			+e.bottom
+				.row 
+					.col © 2021 «ChatFood.ru».
+
+					.col-sm-auto Сделано в 
+						a(href="#").strong.text-body Workes 
+						

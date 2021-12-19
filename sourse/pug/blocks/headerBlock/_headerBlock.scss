@@ -1,19 +1,84 @@
 // start .headerBlock
 .headerBlock {
-	margin-bottom: 1px;
-	min-height: 100vh;
-	min-height: calc(var(--vh, 1vh) * 100);
-	// background-image: url(../img);
-	// background-color: #000000;
+		@include media-breakpoint-up(lg) {
 
-	h1 {
-		margin-bottom: 1px;
+			
+			--sPT: 100px;
+		}
+	--sTPB: 30px;
+	.section-title{
+
+		h1{
+			margin-bottom: rem(30);
+		}
+		p{
+			margin: 0;
+		}
+	}
+		&__video-wrap{
+		position: relative;
+		@include block(248, 539);
+		margin-left: auto;
+		margin-right: auto;
+		width: 279px;
+		height: 563px;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 40px;
+			}
+		video{
+			position: absolute;
+			width: calc(100% - 30px);
+			height: calc(100% - 30px);
+			object-fit: cover;
+			object-position: top;
+			// top: rem(10);
+			@include a-cent;
+		}
+		&::after{
+			content: '';
+			@include a-cent1;
+			background-image: url(../img/svg/mockup.svg);
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
 	}
 
-	h2 {
-		margin-bottom: 1px;
+	&__btn{
+		@extend .btn, .btn-primary;
+		width: rem(220);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+		}
+		margin-bottom: 60px;
 	}
+	&__row{
 
+	}
+	&__item{
+		@include media-breakpoint-up(sm) {
+
+			width: 200px;
+		}
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		max-width: rem(300);
+		.strong{
+			@include rfs(50px);
+			font-weight: bold;
+			line-height: 120%;
+			margin-bottom: rem(10);
+		}
+		&:not(:last-child){
+			margin-bottom: 55px;
+		}
+		p{
+			line-height: 125%;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 
 	@include media-breakpoint-up(lg) {}
@@ -42,7 +107,9 @@
 	//
 	@include media-breakpoint-down(xl) {}
 
-	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(lg) {
+		text-align: center;
+	}
 
 	@include media-breakpoint-down(md) {}
 
@@ -54,22 +121,21 @@
 
 // end.headerBlock
 
-.section-title{
-	p{
-		margin: 20px 0 60px;
-		font-size: 18px;
-	}
-}
-
+ 
 .item{
 	text-align: center;
 
 	&__img{
-		margin: 20px auto 15px;
+		margin: 0 auto rem(20);
 		padding: 30px;
 		border-radius: 100%;
 		background: $light;
 		width: 100px;
 		height: 100px;
+	}
+	h6,
+	.h6{
+		line-height: 150%;
+		margin-bottom: rem(12);
 	}
 }

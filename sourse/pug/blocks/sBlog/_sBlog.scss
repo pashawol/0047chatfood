@@ -1,8 +1,101 @@
 // start .sBlog
 .sBlog {
-		// --sPT: ;
+	@include media-breakpoint-up(lg) {
+
+		--sPB: #{rem(100)};
+	}
+	--sPB: 80px;
+		--sPT: #{rem(30)};
 		// --sPB: ;
 		// --sTPB: ;
+		&__slider{
+			@include media-breakpoint-down(lg) {
+			overflow: visible;
+		}
+		}
+		.swiper-wrapper{
+			margin-left: rem(-10);
+			margin-right: rem(-10);
+			width: calc(100% + #{rem(20)});
+		}
+		&__slide{
+			min-width: rem(380);
+			width: calc(100% / 3);
+			padding-left: rem(10px);
+			padding-right: rem(10px);
+			// margin-right: 20px;
+		
+			picture{
+				@include block(38, 26);
+				overflow: hidden;
+				background: linear-gradient(0deg, #191C1F, #191C1F), #F6F6F6;
+				border-radius: 10px;
+				margin-bottom: rem(20);
+				img{
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+			p{
+				line-height: 125%;
+				margin-bottom: rem(10);
+				&.foot{
+					opacity: 0.4;
+				}
+			}
+		}
+
+		&__title{
+			line-height: 125%;
+			a{
+
+				@extend .text-body;
+			}
+			font-size: rem(20);
+			margin-bottom: rem(10);
+			font-weight: bold;
+			max-width: rem(380);
+		}
+		&__btn{
+			@extend .btn, .btn-outline-primary;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: rem(40);
+			width: rem(220);
+			display: block;
+		}
+
+
+	&__btns-slider{
+		margin-bottom: rem(30);
+		@include media-breakpoint-down(lg) {
+			overflow: visible;
+		}
+		.swiper-wrapper{
+			@include media-breakpoint-up(lg) {
+
+				justify-content: center;
+			}
+		}
+		.swiper-slide{
+			width: auto;
+		}
+	}
+	&__tab-btn{
+		@extend .btn, .btn-light;
+		&:hover,
+		&.active{
+			background-color: #fff !important;
+			border-color: $primary !important;
+		}
+		font-size: 16px;
+		line-height: 100%;
+		padding: rem(12);
+		width: rem(152);
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

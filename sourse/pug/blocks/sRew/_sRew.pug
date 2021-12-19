@@ -6,8 +6,8 @@ mixin sRew(data)
 				h2 Что говорят наши клиенты
 			
 			.row
-				+e.col.col-6 
-					+e.item.bg-wrap(href="#" data-fancybox)
+				+e.col.col-lg-6 
+					+e.item.bg-wrap(href="https://www.youtube.com/watch?v=zXsJJFeyyyQ" data-fancybox)
 						+pic('rew-1.jpg','bg', 0).picture-bg
 						+b.text-wrap 
 							+e.play-button 
@@ -15,27 +15,30 @@ mixin sRew(data)
 							p Смотреть отзыв
 						+b.duration
 							p Продолжительность видео 1:37
-				+e.col.col-6 
-					+e.item.bg-wrap(href="#" data-fancybox)
+				+e.col.col-lg-6 
+					+e.item.bg-wrap(href="https://www.youtube.com/watch?v=zXsJJFeyyyQ" data-fancybox)
 						+pic('rew-2.jpg','bg', 0).picture-bg
 						+b.text-wrap 
 							+e.play-button 
 								img(src="img/svg/play-button.svg")
 							p Смотреть отзыв
 						+b.duration
-							p Продолжительность видео 1:37
-			.row 
+							p Продолжительность видео 1:37 
 				mixin review(i, text, name, work)
-					.col-4
+					.col-lg-4
 						+b.review
-							p.text= text 
-							+e.owner-wrapp 
-								+pic(`owner-${i}.png`,'','')
-								+e.text-wrap 
-									p.name= name + ','
-									p.work= work 
+							p= text 
+							+e.owner-wrapp
+								.row
+									.col-auto
+										+pic(`owner-${i}.png`,'','')
+									.col
+										+e.text-wrap 
+											.name= name + ','
+											.work= work 
 				+review('1','С Jivo мы стали отвечать на вопросы посетителей, они перестали уходить с сайта, не разобравшись','Джейме Ланнистер','владелец кафе "Прага"')
 				+review('2','Благодаря Jivo количество лидов выросло на 70%, что привело к росту конверсий в сделки на 15%','Джон Сноу','владелец кафе "Сантоку"')
 				+review('3','Здорово, что в Jivo можно сразу работать с клиентами из разных каналов, это ускоряет процесс, а значит — позволяет лучше работать и продавать больше','Теон Грейджой','владелец кафе "Едрён-Батон"')
+			+e.btn(type="button") Показать ещё
 
 	// end sRew

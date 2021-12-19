@@ -1,7 +1,106 @@
 .footer {
 		
-	margin-top: auto;
+	border-top: 1px solid #E8E8E8;
+	padding-top: rem(70);
+	@include media-breakpoint-up(sm) {
+	padding-top: rem(40);
+	}
+	&__logo{ 
+		margin-bottom: rem(30);
+	}
+	&__copy{
+		margin-bottom: rem(20);
+	}
+	.row{
+		--bs-gutter-y: 30px;
+	}
+	&__title{
+		font-weight: bold;
+		line-height: 125%;
+		margin-bottom: rem(20);
+	}
 
+	li{
+		list-style: none;
+		margin-bottom: rem(10);
+		a{
+			color: #191C1F;
+		}
+	}
+	&__bottom{
+		border-top: 1px solid #E8E8E8;
+		margin-top: rem(30);
+		padding-top: rem(30);
+		padding-bottom: rem(30);
+		@include media-breakpoint-up(lg) {
+			text-align: left;
+			padding-bottom: rem(30);
+		}
+		padding-bottom: rem(70);
+	}
+@include media-breakpoint-up(lg) {
+
+	&__col{
+		text-align: right;
+	}
+}
+	&__btn + &__btn{
+		margin-left: rem(15);
+	}
+	&__btn{
+		@extend .btn;
+		&.btn-light{
+			font-weight: normal;
+		}
+		font-size: rem(16);
+		width: rem(152);
+		margin-bottom: rem(20);
+		padding: rem(9);
+	
+	}
+	&__contacts{
+		display: flex;
+		@include media-breakpoint-up(lg) {
+
+			justify-content: flex-end;
+		}
+		justify-content: center; 
+		align-items: center;
+		@include roww(10px, m);
+		margin-bottom: rem(20);
+	}
+	&__tel{
+		color: #191C1F;
+		font-weight: bold;
+	}
+	&__mail{
+		opacity: 0.5;
+		@extend .text-body;
+	}
+	&__btn-top{
+		display: inline-flex;
+		align-items: center;
+		margin-top: rem(20);
+		cursor: pointer;
+		.text-btn{
+			margin-right: rem(20);
+		}
+	}
+	&__circle{
+		@extend .btn, .btn-light;
+		width: rem(50);
+		height: rem(50);
+		// display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.icon{	
+				color: $primary;
+				font-size: 16px;
+		}
+		padding: 0;
+		border-radius: 50%;
+	}
 // 
 @include media-breakpoint-up(xl) {}
 
@@ -33,7 +132,13 @@
 // 
 @include media-breakpoint-down(xl) {}
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+	text-align: center;
+	.soc{
+		justify-content: center;
+		margin-bottom: rem(20);
+	}
+}
 
 @include media-breakpoint-down(md) {}
 

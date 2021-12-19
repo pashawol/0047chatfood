@@ -346,18 +346,47 @@ function eventHandler() {
 		},
 	}
 
-	const swiper4 = new Swiper('.sBanners__slider--js', {
-		// slidesPerView: 5,
-		...defaultSl,
+	const swipersPrises = new Swiper('.s-slider-js', { 
 		slidesPerView: 'auto',
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-
+		observer: true,
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+			// renderBullet: function (index, className) {
+			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
+			// }
+		},
+	});
+	const swiperssBlog = new Swiper('.sBlog__btns-slider--js', { 
+		slidesPerView: 'auto', 
+		freeMode: true
+	});
+	const swipersCases = new Swiper('.sCases__slider--js', { 
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		loop: true,
+		navigation: {
+			nextEl: '.sCases .swiper-button-next',
+			prevEl: '.sCases .swiper-button-prev',
+		},
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true, 
+		},
+		breakpoints: { 
+			991: {
+				slidesPerView: 4
+			}
+		}
 	});
 	// modal window
+
+
+	$(".dd-head-js").click(function(){
+		$(this).toggleClass("active").next().slideToggle();
+	})
 
 };
 if (document.readyState !== 'loading') {

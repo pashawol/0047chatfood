@@ -1,5 +1,5 @@
 mixin item-sos(icon, a='#')
-	+e.A.item(href= a target="_blank")
+	+e.A.item(href= a class=`soc__item--${icon}` target="_blank")
 		if block
 			block
 		else
@@ -10,8 +10,10 @@ mixin soc()
 		if block
 			block
 		else
-			+item-sos('fb')
 			+item-sos('instagram')
-			+item-sos('telegram')
+			+item-sos('vk')
+			+item-sos('telegram2')
+			+item-sos('twitter')
+			+item-sos('facebook')
 
 //- /social buttons 
