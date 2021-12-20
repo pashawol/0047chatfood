@@ -2,6 +2,16 @@
 	// start .sForm
 	
 	.sForm {
+		@include media-breakpoint-up(lg) {
+
+			&::before{
+				content: url(../img/svg/logo.svg);
+				display: block;
+				text-align: center;
+				margin-top: 60px;
+				margin-bottom: 30px;
+			}
+		}
 			--sPT: 0;
 		// --sPB: ;
 		// --sTPB: ;

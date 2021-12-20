@@ -29,11 +29,16 @@
 
 	
 	.toggle-menu-mobile {
-		--h: #{em(2)};
-		--color: #{$primary};
-		--position: calc(var(--h) * 2);
+		--h: #{rem(2)};
+		--color: #{$body-color};
+		--position: calc(var(--h) * 4);
 		&.on span {
 			--color: transparent;
+			&::before,
+			&::after{
+				--color: #{$body-color};
+
+			}
 		}
 
 		&.on  { 
@@ -41,9 +46,9 @@
 			--rotate: 45deg;
 		}
 		display: block;
-		height: calc(var(--h)* 12);
+		height: calc(var(--h)* 10);
 		position: relative; 
-		font-size: 32px;
+		font-size: 30px;
 		width: 1em;
 		cursor: pointer;
 		span:after,
@@ -51,6 +56,7 @@
 			content: "";
 			position: absolute;
 			left: 0;
+			background: $body-color;
 		} 
 		span {
 			@include a-cent(y);
@@ -82,15 +88,27 @@
 	.menu-mobile {
 		position: fixed !important;
 		z-index: 999;
-		max-width: 85%;
+		// max-width: 85%;
 		height: calc(var(--vh, 1vh) * 100);
-		width: 280px;
+		width: 100%;
 		top: 0;
 		// left: 0;
 		right: 0;
 		background-color: $body-bg;
+		padding-top: rem(100px);
+		.row{
+			justify-content: center;
+			.col-auto{
+				max-width: 50%;
+			}
+		}
+		&__btn{ 
+			max-width: 100%;
+			width: rem(246);
+			padding: 20px;
+		}
 		&:not(.active){
-			transform: translate3d(120%, 0,0);
+			transform: translate3d( 0, -120%,0);
 			--opacity: 0;
 			.toggle-menu-mobile{
 				opacity: 0;
@@ -98,6 +116,7 @@
 		}
 		@include mt(.6s);
 		will-change: transform;
+		text-align: center;
 
 		
 		.toggle-menu-mobile { 
@@ -108,6 +127,7 @@
 			color: #FFF;
 			top: 10px;
 			z-index: 9999; 
+			
 			span:after,
 			span:before {
 				--color: #FFF;
@@ -119,9 +139,16 @@
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
 			height: 100%;
+			display: flex;
+			flex-direction: column;
 			@include mt(.3s);
 			transition-delay: .4s;
 			opacity: var(--opacity);
+			.container{
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
 		}
 
 		&.active { 
@@ -133,6 +160,11 @@
 
 		ul {
 			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-grow: 1;
+			padding: rem(20) 0;
 		}
 
 		li {
@@ -142,11 +174,32 @@
 
 			a {
 				// font-size: 16px;
-
+				font-size: 50px;
+				color: $body-color;
+				font-weight: bold;
 				padding: 10px;
 				display: block;
-
+				
 			}
+		}
+		.soc{
+			justify-content: center;
+			border-top: 1px solid #E8E8E8;
+			margin-top: 5vh;
+			padding-top: 5vh;
+			padding-bottom: 5vh;
+		}
+		&__mail{
+			display: inline-block;
+			color: $body-color;
+			opacity: 0.5;
+	
 		}
 	}
 }
+
+	.menu-mobile{
+		&__btn{
+			@extend .btn;
+		}
+	}

@@ -11,28 +11,54 @@ mixin mob-mnu()
 		//- request.responseType = 'json';
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
-	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
-			span
+	+b.menu-mobile--js.d-lg-none
 		+e.inner
-			+mnu()
+			.container
+				.row
+					.col-auto
+						+e.btn.btn-light(href="#") Вход в сервис
+					.col-auto
+						+e.btn.btn-outline-primary(href="#") Подключиться
+				+mnu()
+				.footer__contacts
+					a(href='#')
+						img(src='img/svg/telegram.svg' alt='')
+					a(href='#')
+						img(src='img/svg/whatsapp.svg' alt='')
+					a.footer__tel(href='tel:+7(995)966-98-88')
+						| +7 (995) 966-98-88
+				p г. Самара, ул. Партизанская 86,оф. 727 
+				+e.mail(href="mailto:info@chatfood.ru") info@chatfood.ru
+				+soc
 	//  мобильное меню
 mixin top-nav() 
+	+mob-mnu()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
 			.row
 				.col-auto.d-lg-none
 					+menu-toggle()
-				.col-auto
+				.col-lg-auto.col.text-center
 					+logo()
-				.col
+				.col.d-none.d-lg-block
+
+					+b.dropdown-block
+						+e.toggle Ресторанам
+							+icon("chevron-up")
+							+e.dropdown
+								a(href="#").current  Ресторанам
+								a(href="#") Пользователям
+								a(href="#") API
 					//- .menu-mobile.menu-mobile--js
 					//- 	+menu-toggle()
 					//- 	+mnu()
-				.col-auto
+				.col-auto.d-none.d-lg-block
 					+e.btn.btn-light(href="#") Вход в сервис
-				.col-auto
+				.col-auto.d-none.d-lg-block
 					+e.btn.btn-outline-primary(href="#") Подключиться
-					
+				.col-auto.d-lg-none
+					a(href="#")
+						+icon('logout') 
+		
 	// end top-nav
