@@ -3,6 +3,9 @@
 	--animate-delay: 1.2s;
 	
 	--bs-body-font-size: 20px;
+	@media (min-width: 1200px) and (max-width: 1459.98px) {
+		--bs-body-font-size: 14px;
+	}
 	@include media-breakpoint-up(sm) {
 		
 		--bs-body-font-size: #{$em-base};

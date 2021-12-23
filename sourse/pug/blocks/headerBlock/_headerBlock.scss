@@ -1,11 +1,16 @@
 // start .headerBlock
 .headerBlock {
+	margin-top: #{rem(75px)};
+		@media (min-width: 1200px) and (max-width: 1459.98px) {
+
+			--sPT: #{rem(50px)};
+		}
 		@include media-breakpoint-up(lg) {
 
 			
-			--sPT: 100px;
+			--sPT: #{rem(100px)};
 		}
-	--sTPB: 30px;
+	--sTPB: #{rem(30px)};
 	.section-title{
 
 		h1{
@@ -20,6 +25,11 @@
 		@include block(248, 539);
 		margin-left: auto;
 		margin-right: auto;
+			@media (min-width: 1200px) and (max-width: 1459.98px) {
+				width: rem(279px);
+				height: rem(563px);
+
+			}
 		width: 279px;
 		height: 563px;
 			@include media-breakpoint-down(sm) {
@@ -73,7 +83,7 @@
 			margin-bottom: rem(10);
 		}
 		&:not(:last-child){
-			margin-bottom: 55px;
+			margin-bottom: rem(55px);
 		}
 		p{
 			line-height: 125%;

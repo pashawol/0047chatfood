@@ -10,15 +10,18 @@ body:not(.main-page) {
 	// background: svg-load('../svg/check.svg',  stroke=$primary); 
 	// 
 	background-color: #fff;
-	// width: 100vw;
+	width: 100vw;
 	left: 0;
 	top: 0;
 	z-index: 1001;
-	// position: fixed;
-	position: relative;
+	// position: relative;
+	position: fixed;
 	border-bottom: 1px solid #E8E8E8;
 	padding-top: rem(5);
 	padding-bottom: rem(5);
+	@include media-breakpoint-up(sm) {
+		padding-right: 15px;
+	}
 	.row{
 		align-items: center;
 	}
@@ -66,7 +69,7 @@ body:not(.main-page) {
 .dropdown-block{
 	position: relative;
 	display: inline-block;
-	&:hover{
+	&.on{
 		--d: ' ';
 		--angle: 0;
 	}
