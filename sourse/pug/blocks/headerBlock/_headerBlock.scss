@@ -3,7 +3,7 @@
 		@include media-breakpoint-up(lg) {
 
 			
-			--sPT: 6vh;
+			--sPT: 100px;
 		}
 	--sTPB: 30px;
 	.section-title{
@@ -29,8 +29,8 @@
 			position: absolute;
 			width: calc(100% - 30px);
 			height: calc(100% - 30px);
-			object-fit: cover;
-			object-position: top;
+			// object-fit: cover;
+			// object-position: top;
 			// top: rem(10);
 			@include a-cent;
 		}

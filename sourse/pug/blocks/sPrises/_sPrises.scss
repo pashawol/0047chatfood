@@ -33,6 +33,10 @@
 				// background: #E8E8E8; 
 				background: #F6F6F6;
 				border-color: #F6F6F6;
+				&:hover{
+					border-color:  #E8E8E8; 
+					background-color: #fff;
+				}
 			}
 			text-align: center;
 			min-height: 100%;

@@ -12,7 +12,7 @@ mixin sCases(data)
 					.swiper-wrapper
 						mixin slide(i,t,a)
 							+e.slide.swiper-slide
-								+e.item
+								+e.item.hover-card
 									+pic(`logo-${i}.png`,'',0)
 									+e.title= t
 									p Уфа

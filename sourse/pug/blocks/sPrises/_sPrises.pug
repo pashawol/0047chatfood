@@ -9,8 +9,8 @@ mixin sPrises(data)
 				.swiper-wrapper
 					mixin item(m , p, pr,pr2, cl="btn-outline-primary")
 						+e.slide.swiper-slide
-							+e.item&attributes(attributes)
-								+e.head!= `Абонентская плата <span>${m}</span>`
+							+e.item.hover-card&attributes(attributes)
+								+e.head.strong!= `Абонентская плата <span>${m}</span>`
 								if pr2
 									+e.price-lg= pr2
 								p!= p

@@ -1,7 +1,7 @@
 
 	// start .sForm
 	
-	.sForm {
+	body:not(.main-page) .sForm {
 		@include media-breakpoint-up(lg) {
 
 			&::before{
@@ -9,16 +9,31 @@
 				display: block;
 				text-align: center;
 				margin-top: 60px;
-				margin-bottom: 30px;
+				// margin-bottom: 30px;
 			}
 		}
+		}
+	
+	.sForm {
+		// @include media-breakpoint-up(lg) {
+
+		// 	&::before{
+		// 		content: url(../img/svg/logo.svg);
+		// 		display: block;
+		// 		text-align: center;
+		// 		margin-top: 60px;
+		// 		margin-bottom: 30px;
+		// 	}
+		// }
 			--sPT: 0;
 		// --sPB: ;
 		// --sTPB: ;
 		@include media-breakpoint-up(xl) {}
 		@include media-breakpoint-up(lg) {}
 		@include media-breakpoint-up(md) {}
-		@include media-breakpoint-up(sm) {}
+		@include media-breakpoint-up(sm) {
+			--sTPB: #{rem(38)};
+		}
 		@include media-breakpoint-up(xs) {}
 		
 		//
@@ -47,7 +62,8 @@
 		&__step{
 			font-weight: bold;
 			color: $primary;
-			margin-bottom: rem(20);
+			margin-bottom: rem(16);
+			font-size: rem(18);
 		}
 		&__inner{
 			margin-left: auto;

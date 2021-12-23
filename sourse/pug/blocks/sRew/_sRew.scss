@@ -11,6 +11,8 @@
 		}
 		&:hover {
 			color: $success;
+			--bg:  #FF8726;
+			--sc: 1.12;
 		}
 		// margin-bottom: 20px;
 		border-radius: 15px;
@@ -45,13 +47,18 @@
 	font-size: rem(18);
 	padding-top: rem(35);
 	&__play-button{ 
+		img{
+			opacity: 1;
+		}
 		border-radius: 100%;
 		width: rem(70px);
 		height: rem(70px);
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: $primary;
+		@include mt;
+		background: var(--bg, #{$primary});
+		transform: scale(var(--sc, 1));
 		margin: 0 auto 10px;
 	}
 }
@@ -69,9 +76,13 @@
 }
 
 .review{
+	border: 1px solid $light;
 	background: $light;
 	padding: rem(40px);
 	border-radius: rem(15px);
+	&:hover{
+					background-color: #fff;
+				}
 	@include media-breakpoint-up(lg) {
 		min-height: 320px;
 	}

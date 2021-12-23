@@ -1,7 +1,7 @@
 .form-wrap{
  	&__input-wrap{
 			// @extend .form-group;
-			margin-bottom: rem(20);
+			margin-bottom: rem(18);
 			
 		}
 		&__input{
@@ -19,11 +19,12 @@
  	}
 	 &__input-title{
 		 font-weight: bold;
-		 margin-bottom: rem(10);
+		 margin-bottom: rem(8);
 		 display: block;
 	 }
 	 .btn{
 		 margin-bottom: rem(10);
+		 margin-top: rem(12);
 	 }
 }
 

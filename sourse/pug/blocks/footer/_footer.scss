@@ -4,6 +4,7 @@
 	padding-top: rem(70);
 	@include media-breakpoint-up(sm) {
 	padding-top: rem(40);
+	margin-top: rem(50);
 	}
 	&__logo{ 
 		margin-bottom: rem(30);
@@ -17,14 +18,18 @@
 	&__title{
 		font-weight: bold;
 		line-height: 125%;
-		margin-bottom: rem(20);
+		margin-bottom: rem(15);
+		margin-top: rem(15);
 	}
 
 	li{
 		list-style: none;
-		margin-bottom: rem(10);
+		margin-bottom: rem(6);
 		a{
 			color: #191C1F;
+			&:hover{
+				opacity: 0.5;
+			}
 		}
 	}
 	&__bottom{
@@ -37,6 +42,12 @@
 			padding-bottom: rem(30);
 		}
 		padding-bottom: rem(70);
+		a{
+			color: $body-color;
+			&:hover{
+				color: $primary;
+			}
+		}
 	}
 @include media-breakpoint-up(lg) {
 
@@ -67,26 +78,38 @@
 		justify-content: center; 
 		align-items: center;
 		@include roww(10px, m);
-		margin-bottom: rem(20);
+		margin-bottom: rem(15);
 	}
 	&__tel{
 		color: #191C1F;
 		font-weight: bold;
 	}
+	p{
+		margin-bottom: rem(8);
+	}
 	&__mail{
 		opacity: 0.5;
 		@extend .text-body;
+		border-bottom: 1px solid transparent;
+		&:hover{
+			border-color: currentColor;
+		}
 	}
 	&__btn-top{
 		display: inline-flex;
 		align-items: center;
 		margin-top: rem(20);
 		cursor: pointer;
+		position: relative;
 		.text-btn{
 			margin-right: rem(20);
 		}
 	}
 	&__circle{
+		&:before{
+			content: '';
+		@include a-cent;
+		}
 		@extend .btn, .btn-light;
 		width: rem(50);
 		height: rem(50);
