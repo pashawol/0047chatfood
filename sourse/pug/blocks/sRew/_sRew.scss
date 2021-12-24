@@ -6,8 +6,10 @@
 	&__item{
 		@include block(583, 320);
 		background: linear-gradient(0deg, #191C1F, #191C1F);
-		img{
+		picture img{
 			opacity: 0.8;
+			@include mt;
+			transform: scale(var(--sc, 1));
 		}
 		&:hover {
 			color: $success;

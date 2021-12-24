@@ -111,6 +111,12 @@
 		@include a-cent;
 		}
 		@extend .btn, .btn-light;
+		color: $primary;
+		&:hover{
+			background-color: $primary !important;
+			border-color: $primary !important;
+			color: #fff !important;
+		}
 		width: rem(50);
 		height: rem(50);
 		// display: block;
@@ -118,8 +124,7 @@
 		justify-content: center;
 		align-items: center;
 		.icon{	
-				color: $primary;
-				font-size: 16px;
+				font-size: rem(16px);
 		}
 		padding: 0;
 		border-radius: 50%;

@@ -3,9 +3,9 @@
 	@include media-breakpoint-up(lg) {
 
 		--sPB: #{rem(100)};
+		--sPT: #{rem(30)};
 	}
 	--sPB: 80px;
-		--sPT: #{rem(30)};
 		// --sPB: ;
 		// --sTPB: ;
 		&__slider{
@@ -55,7 +55,7 @@
 				img{
 					transform: scale(1.12);
 				}
-				--color: #{$primary};
+				--color: #{$primary2};
 			}
 		}
 		&__title{

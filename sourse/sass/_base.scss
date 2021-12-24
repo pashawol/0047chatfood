@@ -556,13 +556,22 @@ color: rgba(25, 28, 31, .5);
 		}
 	}
 	&__head{
-		font-size: rem(26);
+		font-size: 26px;
 		font-weight: bold;
 		position: relative;
 		padding-top: rem(20);
 		padding-bottom: rem(19);
 		padding-right: rem(40);
 		cursor: pointer;
+		.col{
+			
+			@include mt;
+		}
+		&:hover{
+						.col{
+						opacity: 0.8;
+					}
+					}
 		.icon{
 			position: absolute;
 			color: $primary;
@@ -634,7 +643,7 @@ input{
 	&:hover{
 		color: $body-color;
 		background-color: transparent ;
-		border-color: $primary;
+		border-color: $light;
 	}
 }
 

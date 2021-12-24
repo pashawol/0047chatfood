@@ -1,7 +1,7 @@
 // start .sCases
 .sCases {
 		// --sPT: ;
-		--sPB: ;
+		// --sPB: ;
 	
 		--sTPB: #{rem(56)};
 
@@ -33,6 +33,7 @@
 		flex-direction: column;
 		min-height: 100%;
 		align-items: center;
+		position: relative;
 		text-align: center;
 		p{
 			margin-bottom: rem(15);
@@ -75,6 +76,10 @@
 		top: rem(-54);
 	}
 	&__btn{
+		&:before{
+			content: '';
+			@include a-cent;
+		}
 		@extend .btn, .btn-outline-primary2;
 		width: 100%;
 		font-weight: bold;

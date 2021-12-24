@@ -28,17 +28,22 @@
 			@media (min-width: 1200px) and (max-width: 1459.98px) {
 				width: rem(279px);
 				height: rem(563px);
-
+				
 			}
-		width: 279px;
-		height: 563px;
+			width: 279px;
+			height: 563px;
 			@include media-breakpoint-down(sm) {
 				margin-bottom: 40px;
 			}
-		video{
+			video{
+			@media (min-width: 1200px) and (max-width: 1459.98px) {
+				
+				--sp: #{rem(22px)};
+			}
+			--sp: 22px;
 			position: absolute;
-			width: calc(100% - 30px);
-			height: calc(100% - 30px);
+			width: calc(100% - var(--sp));
+			height: calc(100% - var(--sp));
 			// object-fit: cover;
 			// object-position: top;
 			// top: rem(10);

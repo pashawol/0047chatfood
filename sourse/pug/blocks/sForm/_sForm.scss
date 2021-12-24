@@ -2,6 +2,12 @@
 	// start .sForm
 	
 	body:not(.main-page) .sForm {
+		@include media-breakpoint-down(lg) {
+			 
+				margin-top: rem(56);
+			
+
+		}
 		@include media-breakpoint-up(lg) {
 
 			&::before{

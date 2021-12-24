@@ -238,8 +238,29 @@ function eventHandler() {
 	$(".dropdown-block__toggle").click(function() {
 		$(this).parents(".dropdown-block").toggleClass("on")
 	})
+	
+	document.addEventListener('mouseup', (event) => {
+		let container = event.target.closest(".dropdown-block.on"); // (1)
+		// let link = event.target.closest(".dropdown-block__toggle"); // (1)
+		// let toggle = event.target.closest('.toggle-menu-mobile--js.on'); // (1)
+		if (!container ) {
+			$(".dropdown-block").removeClass("on")
+
+		}
+	}, { passive: true });
 
 	
+	var swiper = new Swiper(".sCompare__table-scroll", {
+		// direction: "vertical",
+		slidesPerView: "auto",
+		freeMode: true,
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			draggable: true,
+			hide: false
+		},
+		mousewheel: true,
+	});
 
 };
 if (document.readyState !== 'loading') {

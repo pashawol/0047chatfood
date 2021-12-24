@@ -5,6 +5,10 @@
 		// --sTPB: ;
 		.row{
 			--bs-gutter-x: 18px;
+			@include media-breakpoint-down(sm) {
+
+				--bs-gutter-y: 40px;
+			}
 		}
 		p{
 			margin-bottom: 0;
