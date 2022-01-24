@@ -1,0 +1,23 @@
+mixin sRestHeaderblock(data)
+	// start sRestHeaderblock
+	+b.SECTION.sRestHeaderblock.section#sRestHeaderblock&attributes(attributes)
+		.container
+			.row
+				.col-md-auto
+					+pic('sRestHeaderblock-1.png', '', 0)
+				.col-md
+					+b.section-title
+						+stars()
+						h2 Кафе Прага | Доставка
+					+e.content
+						p Идейные соображения высшего порядка, а&nbsp;также новая модель организационной деятельности требуют от&nbsp;нас анализа систем массового участия. Таким образом постоянный количественный рост и&nbsp;сфера нашей активности позволяет оценить значение позиций, занимаемых участниками в&nbsp;отношении поставленных задач.
+						.row.align-items-center
+							.col-sm-auto
+								+e.btn.btn-icon-primary2(href="#")
+									+icon("telegram")
+									| prahacafebot
+							.col
+								+e.social
+									span Поделиться:
+									+soc()
+	// end sRestHeaderblock

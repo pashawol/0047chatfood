@@ -22,7 +22,7 @@ body:not(.main-page) {
 	@include media-breakpoint-up(sm) {
 		padding-top: rem(5);
 		padding-bottom: rem(5);
-		padding-right: 15px;
+		// padding-right: 15px;
 	}
 	.row{
 		align-items: center;

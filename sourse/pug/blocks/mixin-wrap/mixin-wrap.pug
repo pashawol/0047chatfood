@@ -32,3 +32,9 @@ mixin addblock()
 mixin logo()
 	a(href="/")
 		img(src="img/svg/logo.svg" laoding="lazy", alt="")
+
+
+mixin stars()
+	+b.stars
+		+e.INPUT.rating(max='5' readonly='' step='0.01' style=`--fill:#FF7200; --value:4.7` type='range' value='4.7')
+		span 4.7

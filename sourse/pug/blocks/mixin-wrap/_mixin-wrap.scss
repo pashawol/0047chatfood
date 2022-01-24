@@ -1,10 +1,8 @@
- 
-	  
-.soc{
+.soc {
 	@include roww(5px, m);
 	display: flex;
-	&__item{
-		text-decoration: none !important; 
+	&__item {
+		text-decoration: none !important;
 		vertical-align: middle;
 		@include mt;
 		display: grid;
@@ -14,48 +12,44 @@
 		border-radius: 50%;
 		background-color: var(--bg, var(--bs-primary));
 		color: #fff !important;
-		&:hover{
+		&:hover {
 			background-color: var(--bg-hover);
 		}
-		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+		&:hover {
+			// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			// opacity: .6 ;
 		}
-		&--instagram{
-			--bg: #E1306C;
+		&--instagram {
+			--bg: #e1306c;
 			--bg-hover: #ce084a;
 		}
-		
-		&--vk{
-			--bg: #0077FF;
+
+		&--vk {
+			--bg: #0077ff;
 			--bg-hover: #1068cc;
 		}
-		&--telegram2{
-			--bg: #2FA6D9;
+		&--telegram2 {
+			--bg: #2fa6d9;
 			--bg-hover: #0b76a3;
 		}
-		&--twitter{
-			--bg: #1DA1F2;
+		&--twitter {
+			--bg: #1da1f2;
 			--bg-hover: #0679c0;
 		}
-		&--facebook{
-			--bg: #4267B2;
+		&--facebook {
+			--bg: #4267b2;
 			--bg-hover: #274279;
 		}
-
 	}
-	.icon{
+	.icon {
 		font-size: rem(16);
 	}
-
-
 }
 
-
-.counter{
+.counter {
 	counter-reset: num;
 	&__item {
-		position: relative; 
+		position: relative;
 		&::before {
 			content: counter(num);
 			counter-increment: num;
@@ -63,23 +57,20 @@
 	}
 }
 
-
-
-
-.addBlock{
+.addBlock {
 	color: var(--color, #{$primary});
 	border: 1px solid;
 	border-radius: 23px;
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	input{
+	input {
 		color: inherit;
 		text-align: center;
 		border: none;
 		height: rem(45);
 	}
-	&__btn{
+	&__btn {
 		color: inherit;
 		height: rem(45);
 		position: relative;
@@ -93,16 +84,73 @@
 		// padding-right: rem(8);
 		width: rem(26);
 		&::before,
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			width: 10px;
-			height: 2px; 
+			height: 2px;
 			background-color: currentColor;
 			@include a-cent;
 			position: absolute;
 		}
-		&--plus::after{
+		&--plus::after {
 			transform: rotate(90deg);
 		}
 	}
 }
+
+.star-block {
+	.icon {
+		font-size: 16px;
+		margin-left: 4px;
+		color: #f2f4f8;
+		&.active {
+			color: $primary;
+		}
+	}
+}
+.stars {
+	&__rating {
+		--dir: right;
+		--fill: gold;
+		--fillbg: rgba(100, 100, 100, 0.15);
+		--star: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_259_126)'%3e%3cpath d='M17.9529 6.90432C17.8344 6.53984 17.5111 6.2818 17.1302 6.24733L11.9341 5.7756L9.88059 0.967905C9.72898 0.614689 9.384 0.386719 9.00002 0.386719C8.61605 0.386719 8.27093 0.614689 8.12028 0.967905L6.06676 5.7756L0.869868 6.24733C0.488911 6.28249 0.166319 6.54053 0.0471156 6.90432C-0.0714014 7.2688 0.0380517 7.66857 0.326173 7.92126L4.25399 11.3654L3.09587 16.4661C3.01114 16.8412 3.15671 17.229 3.4679 17.454C3.63517 17.5755 3.83169 17.6362 4.0289 17.6362C4.19837 17.6362 4.36797 17.5912 4.51945 17.5005L9.00002 14.8215L13.4798 17.5005C13.8084 17.6969 14.2216 17.6789 14.5321 17.454C14.8433 17.229 14.9889 16.8412 14.9042 16.4661L13.7461 11.3654L17.6739 7.92126C17.9619 7.66857 18.0714 7.26962 17.9529 6.90432Z' fill='%23FF7200'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_259_126'%3e%3crect width='18' height='18' fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+		--stars: 5;
+		--starsize: #{rem(18)};
+		--symbol: var(--star);
+		--value: 1;
+		--w: calc(var(--stars) * var(--starsize));
+		--x: calc(100% * (var(--value) / var(--stars)));
+		block-size: var(--starsize);
+		inline-size: var(--w);
+		position: relative;
+		touch-action: manipulation;
+		-webkit-appearance: none;
+		&::-moz-range-track {
+			background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+			block-size: 100%;
+			mask: repeat left center/var(--starsize) var(--symbol);
+		}
+		&::-webkit-slider-runnable-track {
+			background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+			block-size: 100%;
+			mask: repeat left center/var(--starsize) var(--symbol);
+			-webkit-mask: repeat left center/var(--starsize) var(--symbol);
+		}
+		&::-moz-range-thumb {
+			height: var(--starsize);
+			opacity: 0;
+			width: var(--starsize);
+		}
+		&::-webkit-slider-thumb {
+			height: var(--starsize);
+			opacity: 0;
+			width: var(--starsize);
+			-webkit-appearance: none;
+		}
+	}
+	[dir="rtl"] .stars__rating {
+		--dir: left;
+	}
+}
+
+
