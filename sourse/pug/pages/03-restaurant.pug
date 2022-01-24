@@ -4,6 +4,7 @@ extends layout/main.pug
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sRestHeaderblock/_sRestHeaderblock.pug
+include ../blocks/sFacilityMenu/_sFacilityMenu.pug
 //- include ../blocks/sAccordion/_sAccordion.pug
 //- include ../blocks/sCompare/_sCompare.pug
 //- include ../blocks/sSteps/_sSteps.pug
@@ -23,4 +24,5 @@ block title
 block pagecontent 
 	+top-nav()
 	+sRestHeaderblock()
+	+sFacilityMenu()
 	+footer()

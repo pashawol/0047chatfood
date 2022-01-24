@@ -3,6 +3,11 @@
 	// --sPT: ;
 	// --sPB: ;
 	--sTPB: #{rem(20)};
+	.section-title {
+		h1 {
+			@extend .h4;
+		}
+	}
 	.container {
 		position: relative;
 		&::after {

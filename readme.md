@@ -4,3 +4,5 @@
 1. <https://pashawol.github.io/0047chatfood/public/step-3.html>
 1. <https://pashawol.github.io/0047chatfood/public/step-3-1.html>
 1. <https://pashawol.github.io/0047chatfood/public/step-3-2.html>
+# Inner pages
+1. <https://pashawol.github.io/0047chatfood/public/03-restaurant.html>

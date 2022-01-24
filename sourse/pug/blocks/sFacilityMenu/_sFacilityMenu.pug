@@ -1,0 +1,31 @@
+mixin sFacilityMenu(data)
+	// start sFacilityMenu
+	+b.SECTION.sFacilityMenu.section#sFacilityMenu&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Меню заведения
+			+e.slider-wrapper
+				.d-lg-block.d-none
+					+arrow
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin sFacilityMenuItem(img, h, t)
+							+e.slide.swiper-slide
+								+e.item(href="#")
+									if img
+										+pic(`sFacilityMenu-${img}.png`, '', 0)
+									h6!= h
+									.small!= t
+						+sFacilityMenuItem(1, `Бургеры`, `4&nbsp;блюда`)
+						+sFacilityMenuItem(2, `Основные блюда`, `12&nbsp;блюд`)
+						+sFacilityMenuItem('', `Завтраки`, `8&nbsp;блюд`)
+						+sFacilityMenuItem(3, `Закуски`, `16&nbsp;блюд`)
+						+sFacilityMenuItem(4, `Салаты`, `8&nbsp;блюд`)
+						+sFacilityMenuItem(5, `Круассаны`, `3&nbsp;блюда`)
+						+sFacilityMenuItem(1, `Бургеры`, `4&nbsp;блюда`)
+						+sFacilityMenuItem(3, `Закуски`, `16&nbsp;блюд`)
+						+sFacilityMenuItem(4, `Салаты`, `8&nbsp;блюд`)
+						+sFacilityMenuItem(5, `Круассаны`, `3&nbsp;блюда`)
+						+sFacilityMenuItem(1, `Бургеры`, `4&nbsp;блюда`)
+					.swiper-scrollbar.d-lg-none
+	// end sFacilityMenu

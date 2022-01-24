@@ -227,6 +227,19 @@ function eventHandler() {
 			}
 		}
 	});
+	const swipersFacilityMenu = new Swiper('.sFacilityMenu__slider--js', { 
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		// loop: true,
+		navigation: {
+			nextEl: '.sFacilityMenu .swiper-button-next',
+			prevEl: '.sFacilityMenu .swiper-button-prev',
+		},
+		scrollbar: {
+			el: '.sFacilityMenu .swiper-scrollbar',
+			draggable: true,
+		}
+	});
 	// modal window
 
 
