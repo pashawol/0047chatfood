@@ -59,6 +59,11 @@
 			margin-bottom: 0;
 		}
 	}
+	&__tel {
+		&:not(:hover) {
+			color: $body-color;
+		}
+	}
 	&__social-btn {
 		@include roww(10px, m);
 		display: inline-flex;
