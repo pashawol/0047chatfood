@@ -37,4 +37,10 @@ mixin logo()
 mixin stars()
 	+b.stars
 		+e.INPUT.rating(max='5' readonly='' step='0.01' style=`--fill:#FF7200; --value:4.7` type='range' value='4.7')
+		//- +e.INPUT.rating(max='5' step='0.01' style=`--fill:#FF7200; --value:4.7` oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)" type='range' value='4.7')
 		span 4.7
+		
+mixin social-block()
+	+b.social-block
+		span Поделиться:
+		+soc()
