@@ -643,7 +643,6 @@ input {
 	}
 }
 
-
 .social-block {
 	display: flex;
 	align-items: center;
@@ -652,5 +651,37 @@ input {
 		line-height: 125%;
 		font-weight: 600;
 		margin-right: rem(15);
+	}
+}
+
+.breadcrumb-wrap {
+	background-color: $light;
+	.breadcrumb {
+		display: flex;
+		flex-wrap: nowrap;
+		font-size: 16px;
+		.swiper-slide {
+			width: auto;
+		}
+		.breadcrumb-item {
+			a {
+				color: $body-color;
+				opacity: 0.5;
+				font-size: 16px;
+				&:hover {
+					color: $primary;
+					opacity: 1;
+				}
+			}
+			&.active {
+				a {
+					pointer-events: none;
+					opacity: 1;
+				}
+			}
+			// & + .breadcrumb-item {
+			//   padding-left: 1rem;
+			// }
+		}
 	}
 }

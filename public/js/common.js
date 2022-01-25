@@ -289,6 +289,18 @@ function eventHandler() {
 		mousewheel: true,
 	});
 
+	const breadSlider = new Swiper('.bread-slider-js', {
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchOverflow: true,
+		spaceBetween: 0,
+		// loopFillGroupWithBlank: true,
+		// touchRatio: 0.2,
+		// slideToClickedSlide: true,
+		// freeModeMomentum: true,
+
+	});
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
