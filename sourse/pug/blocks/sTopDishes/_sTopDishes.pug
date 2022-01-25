@@ -1,0 +1,37 @@
+mixin sTopDishes(data)
+	// start sTopDishes
+	+b.SECTION.sTopDishes.section#sTopDishes&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Топ блюд заведения
+			+e.slider-wrapper
+				.d-lg-block.d-none
+					+arrow
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin sTopDishesItem(img, h, t, p)
+							+e.slide.swiper-slide
+								+e.item
+									+pic(`sTopDishes-${img}.png`, 'bg', 0)
+									+e.ratings
+										+b.stars
+											+e.INPUT.rating(max='1' readonly='' step='0.01' style=`--fill:#FF7200; --stars: 1; --value:1` type='range' value='1')
+											span 4.7
+										.small 35 заказов
+									h6!= h
+									.small!= t
+									h6!= p
+									+e.btn.btn-icon-primary2(href="#")
+										+icon("telegram")
+										| Заказать
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи. Lorem ipsum dolor sit amet consectetur adipisicing.`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи. Lorem ipsum dolor sit amet consectetur adipisicing.`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи`, `Цена: 380₽`)
+						+sTopDishesItem(1, `Фиш&amp;Чипс с&nbsp;соусом Чеддер и&nbsp;овощным салатом`, `Жаренная рыба, приготовленная на&nbsp;гриле, картофель и&nbsp;свежие овощи`, `Цена: 380₽`)
+						
+					//- .swiper-scrollbar.d-lg-none
+	// end sTopDishes

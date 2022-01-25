@@ -240,6 +240,20 @@ function eventHandler() {
 			draggable: true,
 		}
 	});
+
+	const swiperssTopDishes = new Swiper('.sTopDishes__slider--js', { 
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+		// loop: true,
+		navigation: {
+			nextEl: '.sTopDishes .swiper-button-next',
+			prevEl: '.sTopDishes .swiper-button-prev',
+		},
+		// scrollbar: {
+		// 	el: '.sTopDishes .swiper-scrollbar',
+		// 	draggable: true,
+		// }
+	});
 	// modal window
 
 

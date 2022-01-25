@@ -1,7 +1,7 @@
 // start .sRestHeaderblock
 .sRestHeaderblock {
-	// --sPT: ;
-	// --sPB: ;
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)};
 	--sTPB: #{rem(20)};
 	.section-title {
 		h1 {
@@ -44,8 +44,8 @@
 			line-height: 1;
 			margin-left: rem(10);
 		}
-		&__rating {
-		}
+		// &__rating {
+		// }
 	}
 	picture {
 		margin-bottom: rem(20);
