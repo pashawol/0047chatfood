@@ -2,8 +2,32 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
 			.row
+				.col-lg-6
+					+b.section-title
+						h2 Контакты
+					ul
+						li
+							span.strong Телефон: 
+							+e.tel(href="tel:+79297011111") +7 (929) 701-11-11
+						li
+							span.strong Адрес: 
+							span г. Самара, ул. Советской Армии, дом 127
+						li
+							span.strong Режим работы: 
+							span Воскресенье - Четверг 09.00 - 21.00 <br> Пятница - Суббота 09.00 - 22.00
+						li
+							+e.social-btn(href='#' target='_blank')
+								.soc__item.soc__item--instagram
+									+icon('instagram')
+								span praha_bakery
+						li
+							+e.btn(href="#")
+								img(src="img/svg/taxi-logo.svg", alt="")
+								span Вызвать такси
+				.col-lg-6.order-lg-first
+					+e.map
+						script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c' type='text/javascript')
+						+e.map-widget#map
+
 	// end sContact

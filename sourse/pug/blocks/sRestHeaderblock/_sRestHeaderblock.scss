@@ -91,26 +91,4 @@
 	}
 } // end.sRestHeaderblock
 
-.btn-icon-primary2 {
-	@extend .btn, .btn-primary2;
-	font-size: rem(16);
-	line-height: 125%;
-	font-weight: bold;
-	padding: rem(13) rem(21);
-	color: $white !important;
-	.icon {
-		margin-right: rem(10);
-		font-size: rem(20);
-	}
-}
 
-.social-block {
-	display: flex;
-	align-items: center;
-	& > span {
-		font-size: rem(16);
-		line-height: 125%;
-		font-weight: 600;
-		margin-right: rem(15);
-	}
-}
