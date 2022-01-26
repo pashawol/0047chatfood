@@ -9,6 +9,7 @@
 		align-items: center;
 		h1 {
 			line-height: 120%;
+			margin-bottom: 0;
 		}
 		span {
 			@extend .btn-secondary;

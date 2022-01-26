@@ -1,0 +1,28 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sRestHeaderblock/_sRestHeaderblock.pug
+//- include ../blocks/sFacilityMenu/_sFacilityMenu.pug
+//- include ../blocks/sTopDishes/_sTopDishes.pug
+//- include ../blocks/sAccordion/_sAccordion.pug
+//- include ../blocks/sCompare/_sCompare.pug
+//- include ../blocks/sSteps/_sSteps.pug
+//- include ../blocks/sPrises/_sPrises.pug
+//- include ../blocks/sRew/_sRew.pug
+//- include ../blocks/sCases/_sCases.pug
+include ../blocks/sBlog/_sBlog.pug
+//- include ../blocks/sWhy/_sWhy.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg=  null
+
+block title
+	- let  title= 'Блог'
+	title= title
+block pagecontent 
+	+top-nav()
+	+sBlogPage()
+	+footer()
