@@ -89,6 +89,7 @@
 		display: flex;
 		flex-direction: column;
 		// justify-content: center;
+		position: relative;
 		background-color: $white;
 		height: 100%;
 		border-radius: $border-radius;
@@ -152,6 +153,10 @@
 		padding: rem(10) rem(21);
 		margin-top: rem(20);
 		align-self: start;
+		&:before {
+			content: "";
+			@include a-cent;
+		}
 	}
 
 	@include media-breakpoint-up(xl) {

@@ -1,0 +1,33 @@
+mixin sRestaurants(data)
+	// start sRestaurants
+	+b.SECTION.sRestaurants.section#sRestaurants&attributes(attributes)
+		.container
+			+b.section-title
+				h1 Рестораны
+				span 2,934
+			+e.cards
+				mixin card(i,t,a)
+					+e.card.hover-card
+						+e.img-wrap
+							if i
+								+pic(`logo-${i}.png`,'bg',0)
+						+e.content
+							+e.title= t
+							p Уфа
+							+e.btn(href="#")
+								+icon("telegram")
+								= a
+						+icon("chevron-right")
+				+card(`1`,`Грин Доставка`,`Greenchatbot`)
+				+card(`2`,`ЕДРЁН-БАТОН Доставка`,`EdrenBatonBot`)
+				+card(`3`,`Прага Доставка`,`prahacafebot`)
+				+card(`4`,`Сантоку Доставка`,`SantokuBot`)
+				+card(`4`,`Сантоку Доставка`,`SantokuBot`)
+				+card(`2`,`ЕДРЁН-БАТОН Доставка`,`EdrenBatonBot`)
+				+card(``,`Грин Доставка`,`Greenchatbot`)
+				+card(`3`,`Прага Доставка`,`prahacafebot`)
+				+card(``,`ЕДРЁН-БАТОН Доставка`,`EdrenBatonBot`)
+				+card(`4`,`Сантоку Доставка`,`SantokuBot`)
+				+card(`3`,`Прага Доставка`,`prahacafebot`)
+				+card(`1`,`Грин Доставка`,`Greenchatbot`)
+	// end sRestaurants
