@@ -8,3 +8,4 @@
 1. <https://pashawol.github.io/0047chatfood/public/03-restaurant.html>
 1. <https://pashawol.github.io/0047chatfood/public/04-all-restaurants.html>
 1. <https://pashawol.github.io/0047chatfood/public/05-blog-page.html>
+1. <https://pashawol.github.io/0047chatfood/public/06-blog-article.html>
