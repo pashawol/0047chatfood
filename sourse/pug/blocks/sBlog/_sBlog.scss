@@ -129,8 +129,7 @@
 		}
 		.sBlog__items {
 			display: grid;
-			gap: 40px 20px;
-			margin-bottom: var(--sPB);
+			gap: 40px 20px;	
 			@include media-breakpoint-up(md) {
 				grid-template-columns: repeat(2, 1fr);
 			}

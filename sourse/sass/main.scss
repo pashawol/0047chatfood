@@ -67,27 +67,56 @@ $output-bourbon-deprecation-warnings: false;
 @import "../../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
+@import "../../node_modules/bootstrap/scss/pagination";
 
-// @import "../../node_modules/bootstrap/scss/pagination";
+.pagination-wrapper ul {
+	@extend .pagination;
+	@include roww(10px, m);
+	justify-content: center;
+	margin-bottom: 0;
+	margin-top: rem(40);
+}
 
-// .pagination-wrapper ul {
-// 	@extend .pagination;
-// }
+.pagination-wrapper li {
+	@extend .page-item;
+	a {
+		cursor: pointer;
+	}
+	.page-numbers {
+		@extend .page-link;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: $pagination-border-radius;
+		width: rem(35);
+		height: rem(35);
+		font-size: rem(14);
 
-// .pagination-wrapper li .page-numbers {
-// 	@extend .page-link;
-// }
-
-// .pagination-wrapper li {
-// 	@extend .page-item;
-
-// 	.current {
-// 		z-index: 1;
-// 		// color: $pagination-active-color;
-// 		// background-color: $pagination-active-bg;
-// 		// border-color: $pagination-active-border-color;
-// 	}
-// }
+		&.prev,
+		&.next {
+			.icon {
+				font-size: rem(16);
+			}
+			&:not(:hover) {
+				color: $primary;
+				background-color: $light;
+				border-color: $light;
+			}
+			&.disabled {
+				color: $pagination-disabled-color;
+				background-color: $pagination-disabled-bg;
+				border-color: $pagination-disabled-border-color;
+				pointer-events: none;
+			}
+		}
+		&.current {
+			z-index: 1;
+			color: $pagination-active-color;
+			background-color: $pagination-active-bg;
+			border-color: $pagination-active-border-color;
+		}
+	}
+}
 @import "root";
 @import "base";
 @import "../pug/blocks/**/*.scss";
