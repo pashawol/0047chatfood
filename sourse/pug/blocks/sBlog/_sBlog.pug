@@ -41,9 +41,10 @@ mixin sBlogPage(data)
 					+e.btn-item(type="button") Обновления
 					+e.btn-item(type="button") Новости
 					+e.btn-item(type="button") Статьи
-					+e.BUTTON.search 
-						span Поиск в блоге
-						+icon('search')
+					+b.search-blog
+						+input(`Поиск в блоге`, `text`)
+							button
+								+icon('search')
 		.container
 			+b.section-title
 				h1 Блог

@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Блог</title>
+		<title>Британский стартап доставки продуктов за 15 минут</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
@@ -121,151 +121,40 @@
 				</div>
 			</div>
 			<!-- end top-nav-->
-			<!-- start sBlogPage-->
-			<section class="sBlog sBlog--page section" id="sBlog">
-				<div class="sBlog__btns-wrap">
-					<div class="container">
-						<div class="sBlog__btns">
-							<button class="sBlog__btn-item active" type="button">Все
+			<div class="breadcrumb-wrap">
+				<div class="container">
+					<nav class="bread-slider-js swiper" aria-label="breadcrumb">
+						<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+									<meta itemprop="position" content="1"/></a></li>
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Блог</span>
+									<meta itemprop="position" content="2"/></a></li>
+							<li class="breadcrumb-item swiper-slide active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Британский стартап доставки продуктов за 15 минут</span>
+									<meta itemprop="position" content="3"/></a></li>
+						</ol>
+					</nav>
+					<div class="search-blog">
+						<div class="search-blog__input-wrap form-group"><input class="search-blog__input form-control" name="text" type="text" placeholder="Поиск в блоге"/>
+							<button>
+								<svg class="icon icon-search ">
+									<use xlink:href="img/svg/sprite.svg#search"></use>
+								</svg>
 							</button>
-							<button class="sBlog__btn-item" type="button">Обновления
-							</button>
-							<button class="sBlog__btn-item" type="button">Новости
-							</button>
-							<button class="sBlog__btn-item" type="button">Статьи
-							</button>
-							<div class="search-blog">
-								<div class="search-blog__input-wrap form-group"><input class="search-blog__input form-control" name="text" type="text" placeholder="Поиск в блоге"/>
-									<button>
-										<svg class="icon icon-search ">
-											<use xlink:href="img/svg/sprite.svg#search"></use>
-										</svg>
-									</button>
-								</div>
-								<!-- +e.input-wrap-->
-							</div>
 						</div>
+						<!-- +e.input-wrap-->
 					</div>
 				</div>
+			</div>
+			<!-- start sContent-->
+			<section class="sContent section" id="sContent">
 				<div class="container">
-					<div class="section-title">
-						<h1>Блог</h1>
-					</div>
-					<div class="sBlog__items">
-						<div class="sBlog__item"><a class="d-block" href="#">
-								<!-- picture-->
-								<picture> 
-									<source type="image/avif" srcset="img/@2x/avif/sBlog-1.avif"/>
-									<source type="image/webp" srcset="img/@2x/webp/sBlog-1.webp"/><img class="object-fit-js" src="img/@2x/sBlog-1.jpg" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture--></a>
-							<p>Новости</p>
-							<div class="sBlog__title"><a href="#">&laquo;Макдоналдс&raquo; планирует отказаться от&nbsp;пластиковых игрушек в&nbsp;&laquo;Хэппи Мил&raquo; по&nbsp;всему миру к&nbsp;2025 году</a>
-							</div>
-							<p class="sBlog__text">История началась в&nbsp;2019&nbsp;году, когда пара британских школьников организовали петицию на&nbsp;charge.org, призывая &laquo;Макдоналдс&raquo; и&nbsp;&quot;Бургер...
-							</p>
-							<p class="foot">3 сентября 2021</p>
-						</div>
-						<div class="sBlog__item"><a class="d-block" href="#">
-								<!-- picture-->
-								<picture> 
-									<source type="image/avif" srcset="img/@2x/avif/sBlog-2.avif"/>
-									<source type="image/webp" srcset="img/@2x/webp/sBlog-2.webp"/><img class="object-fit-js" src="img/@2x/sBlog-2.jpg" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture--></a>
-							<p>Обновления</p>
-							<div class="sBlog__title"><a href="#">Приостановление приема заказов, реферальная ссылка и&nbsp;API</a>
-							</div>
-							<p class="sBlog__text">Обновления в&nbsp;августе затронули функционал приостановления приема заказов от&nbsp;пользователей в&nbsp;нерабочее время заведения. Теперь...
-							</p>
-							<p class="foot">3 сентября 2021</p>
-						</div>
-						<div class="sBlog__item"><a class="d-block" href="#">
-								<!-- picture-->
-								<picture> 
-									<source type="image/avif" srcset="img/@2x/avif/sBlog-3.avif"/>
-									<source type="image/webp" srcset="img/@2x/webp/sBlog-3.webp"/><img class="object-fit-js" src="img/@2x/sBlog-3.jpg" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture--></a>
-							<p>Статьи</p>
-							<div class="sBlog__title"><a href="#">Как уменьшить ассортимент и&nbsp;увеличить продажи в&nbsp;ресторане доставки еды за&nbsp;6&nbsp;шагов</a>
-							</div>
-							<p class="sBlog__text">По&nbsp;принципу Парето, 20% усилий дают 80&nbsp;результата. Этот принцип распространяется и&nbsp;на&nbsp;меню ресторана. О&nbsp;том, как работать&nbsp;с...
-							</p>
-							<p class="foot">3 сентября 2021</p>
-						</div>
-						<div class="sBlog__item"><a class="d-block" href="#">
-								<!-- picture-->
-								<picture> 
-									<source type="image/avif" srcset="img/@2x/avif/sBlog-2.avif"/>
-									<source type="image/webp" srcset="img/@2x/webp/sBlog-2.webp"/><img class="object-fit-js" src="img/@2x/sBlog-2.jpg" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture--></a>
-							<p>Обновления</p>
-							<div class="sBlog__title"><a href="#">Приостановление приема заказов, реферальная ссылка и&nbsp;API</a>
-							</div>
-							<p class="sBlog__text">Обновления в&nbsp;августе затронули функционал приостановления приема заказов от&nbsp;пользователей в&nbsp;нерабочее время заведения. Теперь...
-							</p>
-							<p class="foot">3 сентября 2021</p>
-						</div>
-						<div class="sBlog__item"><a class="d-block" href="#">
-								<!-- picture-->
-								<picture> 
-									<source type="image/avif" srcset="img/@2x/avif/sBlog-4.avif"/>
-									<source type="image/webp" srcset="img/@2x/webp/sBlog-4.webp"/><img class="object-fit-js" src="img/@2x/sBlog-4.jpg" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture--></a>
-							<p>Статьи</p>
-							<div class="sBlog__title"><a href="#">Яндекс.Еда выставила счет клиентам: пришло время искать альтернативу?</a>
-							</div>
-							<p class="sBlog__text">Основанный в&nbsp;2018 году сервис доставки готовой еды из&nbsp;ресторанов и&nbsp;продуктов из&nbsp;магазинов с&nbsp;говорящим названием Яндекс.Еда быстро стал популярным у&nbsp;жителей столицы, а&nbsp;затем&nbsp;&mdash; и&nbsp;друг...
-							</p>
-							<p class="foot">3 сентября 2021</p>
-						</div>
-						<div class="sBlog__item"><a class="d-block" href="#">
-								<!-- picture-->
-								<picture> 
-									<source type="image/avif" srcset="img/@2x/avif/sBlog-5.avif"/>
-									<source type="image/webp" srcset="img/@2x/webp/sBlog-5.webp"/><img class="object-fit-js" src="img/@2x/sBlog-5.jpg" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture--></a>
-							<p>Новости</p>
-							<div class="sBlog__title"><a href="#">CRM для кафе и&nbsp;ресторана! Новый уровень обслуживания.</a>
-							</div>
-							<p class="sBlog__text">В&nbsp;мае этого года основной конкурент Яндекс.Еды, сервис доставки еды Delivery Club, ввел плату за&nbsp;свои услуги. Скромная сумма, которая в&nbsp;среднем составляет 19&nbsp;рублей...
-							</p>
-							<p class="foot">3 сентября 2021</p>
-						</div>
-					</div>
-					<div class="pagination-wrapper">
-						<ul>
-									<li><a class="next page-numbers disabled" href="#">
-											<svg class="icon icon-prev ">
-												<use xlink:href="img/svg/sprite.svg#prev"></use>
-											</svg></a>
-									</li>
-									<li><span class="page-numbers current">1</span>
-									</li>
-									<li><a class="page-numbers" href="#">2</a>
-									</li>
-									<li><a class="page-numbers" href="#">3</a>
-									</li>
-									<li><a class="page-numbers" href="#">4</a>
-									</li>
-									<li><a class="page-numbers" href="#">...</a>
-									</li>
-									<li><a class="page-numbers" href="#">8</a>
-									</li>
-									<li><a class="next page-numbers" href="#">
-											<svg class="icon icon-next ">
-												<use xlink:href="img/svg/sprite.svg#next"></use>
-											</svg></a>
-									</li>
-						</ul>
+					<div class="sContent__wrapper">
+						<h1>Британский стартап доставки продуктов за 15 минут </h1>
+						<div class="row"></div>
 					</div>
 				</div>
 			</section>
-			<!-- end sBlogPage-->
+			<!-- end sContent-->
 			<footer class="footer">
 				<div class="container">
 					<div class="row">

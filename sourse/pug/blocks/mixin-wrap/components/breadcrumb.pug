@@ -9,3 +9,4 @@ mixin breadcrumb(...items)
 							a(href=(i == 0 ? "/" : '#') itemprop="item" )
 								span( itemprop="name")= items[i]
 								meta(itemprop="position" content= (i + 1) )
+			block

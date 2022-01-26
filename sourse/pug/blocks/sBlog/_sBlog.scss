@@ -129,7 +129,7 @@
 		}
 		.sBlog__items {
 			display: grid;
-			gap: 40px 20px;	
+			gap: 40px 20px;
 			@include media-breakpoint-up(md) {
 				grid-template-columns: repeat(2, 1fr);
 			}
@@ -183,27 +183,8 @@
 		.sBlog__text {
 			flex-grow: 1;
 		}
-		.sBlog__search {
-			@include mt;
-			border: none;
-			outline: none;
+		.search-blog {
 			margin-left: auto;
-			font-size: 16px;
-			height: 65px;
-			border-bottom: 2px solid transparent;
-			background-color: transparent;
-			color: rgba($color: $body-color, $alpha: 0.5);
-			&.active,
-			&:hover,
-			&:focus {
-				border-color: $primary;
-				color: $body-color;
-			}
-			.icon {
-				font-size: 20px;
-				color: $body-color;
-				margin-left: 10px;
-			}
 		}
 	}
 
@@ -222,3 +203,34 @@
 	@include media-breakpoint-down(xl) {
 	}
 } // end.sBlog
+
+.search-blog {
+	@include mt;
+	border: none;
+	outline: none;
+	margin-left: auto;
+	padding-right: 0;
+	font-size: 16px;
+	background-color: transparent;
+	color: rgba($color: $body-color, $alpha: 0.5);
+	white-space: nowrap;
+	&.active,
+	&:hover,
+	&:focus {
+		color: $body-color;
+	}
+	.icon {
+		font-size: 20px;
+		color: $body-color;
+	}
+	&__input-wrap {
+		position: relative;
+		button {
+			@include a-cent(y);
+			right: 0;
+		}
+	}
+	&__input {
+
+	}
+}

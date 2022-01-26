@@ -663,6 +663,22 @@ input {
 
 .breadcrumb-wrap {
 	background-color: $light;
+	.search-blog {
+		background-color: $light;
+		margin-left: rem(20);
+	}
+	.container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	// .bread-slider-js {
+	// 	overflow: visible;
+	// }
+	.swiper {
+		margin-left: 0;
+	}
 	.breadcrumb {
 		display: flex;
 		flex-wrap: nowrap;
