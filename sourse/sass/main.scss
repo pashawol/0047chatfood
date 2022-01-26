@@ -95,7 +95,7 @@ $output-bourbon-deprecation-warnings: false;
 		&.prev,
 		&.next {
 			.icon {
-				font-size: rem(16);
+				font-size: rem(15);
 			}
 			&:not(:hover) {
 				color: $primary;
