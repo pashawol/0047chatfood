@@ -27,7 +27,7 @@ block pagecontent
 	+breadcrumb(`Главная`, `Блог`, title)
 		+b.search-blog
 			+input(`Поиск в блоге`, `text`)
-				button
+				button(type="submit")
 					+icon('search')
 	+sContent()
 	+footer()

@@ -185,6 +185,7 @@
 		}
 		.search-blog {
 			margin-left: auto;
+			// margin-right: 0;
 		}
 	}
 
@@ -211,26 +212,58 @@
 	margin-left: auto;
 	padding-right: 0;
 	font-size: 16px;
+	margin-right: 0;
 	background-color: transparent;
 	color: rgba($color: $body-color, $alpha: 0.5);
 	white-space: nowrap;
+	width: 100%;
+	max-width: 50%;
 	&.active,
 	&:hover,
 	&:focus {
 		color: $body-color;
 	}
-	.icon {
-		font-size: 20px;
-		color: $body-color;
-	}
+
 	&__input-wrap {
 		position: relative;
 		button {
+			@include mt;
 			@include a-cent(y);
+			display: block;
 			right: 0;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			width: 24px;
+			height: 100%;
+			padding: 0;
+			.icon {
+				font-size: 20px;
+				color: $body-color;
+			}
+			&:hover {
+				color: $primary;
+				.icon {
+					color: currentColor;
+				}
+			}
 		}
 	}
 	&__input {
-
+		@include mt;
+		font-size: 16px;
+		width: 140px;
+		background-color: $light;
+		border: none;
+		margin-left: auto;
+		padding: 9px 24px 9px 9px;
+		&:focus {
+			width: 100%;
+			padding-left: 12px;
+			padding-right: 30px;
+			+ button {
+				width: 30px;
+			}
+		}
 	}
 }
