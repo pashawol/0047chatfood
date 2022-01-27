@@ -217,7 +217,7 @@
 	color: rgba($color: $body-color, $alpha: 0.5);
 	white-space: nowrap;
 	width: 100%;
-	max-width: 50%;
+	max-width: 35%;
 	&.active,
 	&:hover,
 	&:focus {
@@ -257,10 +257,11 @@
 		border: none;
 		margin-left: auto;
 		padding: 9px 24px 9px 9px;
-		&:focus {
+		&:hover, &:focus {
 			width: 100%;
 			padding-left: 12px;
 			padding-right: 30px;
+			background-color: $white;
 			+ button {
 				width: 30px;
 			}
