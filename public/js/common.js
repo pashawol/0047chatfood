@@ -289,6 +289,18 @@ function eventHandler() {
 		mousewheel: true,
 	});
 
+	var swiper = new Swiper(".table-scroll-block", {
+		// direction: "vertical",
+		slidesPerView: "auto",
+		freeMode: true,
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			draggable: true,
+			hide: false
+		},
+		mousewheel: true,
+	});
+
 	const breadSlider = new Swiper('.bread-slider-js', {
 		slidesPerView: 'auto',
 		freeMode: true,
