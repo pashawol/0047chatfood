@@ -261,7 +261,6 @@ function eventHandler() {
 		$(this).toggleClass("active").next().slideToggle();
 	})
 
-	
 	$(".dropdown-block__toggle").click(function() {
 		$(this).parents(".dropdown-block").toggleClass("on")
 	})
@@ -375,6 +374,28 @@ function eventHandler() {
 				spaceBetween: 20
 			}
 		}
+	});
+
+	$('.sContent__soc-wrapper').hcSticky({
+    stickTo: $('.sContent__body'),
+		top: 100,
+		bottomEnd: 100,
+		responsive: {
+			992: {
+				disable: true,
+			}
+		}
+  });
+
+	$('.modal-banner').hcSticky({
+    stickTo: $('.sContent__main-wrapper'),
+		top: 110,
+		bottomEnd: 100,
+		
+  });
+
+	$(".modal-banner__close-btn").click(function(){
+		$(this).parent(".modal-banner").hide();
 	});
 
 };
