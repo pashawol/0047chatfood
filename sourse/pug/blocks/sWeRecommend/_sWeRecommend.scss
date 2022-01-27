@@ -49,6 +49,9 @@
 		@media (min-width: 1400px) {
 			--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) - 20px);
 		}
+		&.swiper-button-disabled {
+			opacity: 0;
+		}
 	}
 	&__item {
 		position: relative;

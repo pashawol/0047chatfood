@@ -366,8 +366,8 @@ function eventHandler() {
 			clickable: true, 
 		},
 		navigation: {
-			nextEl: '.sWeRecommend__slider--js .swiper-button-next',
-			prevEl: '.sWeRecommend__slider--js .swiper-button-prev',
+			nextEl: '.sWeRecommend .swiper-button-next',
+			prevEl: '.sWeRecommend .swiper-button-prev',
 		},
 		breakpoints: {
 			992: {
