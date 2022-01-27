@@ -1,0 +1,27 @@
+mixin sWeRecommend(data)
+	// start sWeRecommend
+	+b.SECTION.sWeRecommend.section#sWeRecommend&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Рекомендуем
+			+e.slider-wrapper
+				.d-lg-block.d-none
+					+arrow
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin slide(i,t,a)
+							+e.slide.swiper-slide
+								+e.item
+									a(href="#").d-block
+										+pic(`news-1.jpg`,'bg',0)
+									p Работа с клиентом
+									+e.title
+										a(href="#") В WhatsApp Business API появились новые форматы промо-рассылок 
+									p.foot 3 сентября 2021
+						+slide()
+						+slide()
+						+slide()
+						+slide()
+						+slide()
+					.swiper-pagination
+	// end sWeRecommend
