@@ -142,6 +142,7 @@
 		// overflow-x: auto;
 		// @extend .custom-scroll;
 		// margin-bottom: rem(60);
+		overflow: visible;
 		.swiper-slide {
 			width: auto;
 			@include media-breakpoint-down(lg) {
