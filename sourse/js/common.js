@@ -390,7 +390,7 @@ function eventHandler() {
 	$('.modal-banner').hcSticky({
     stickTo: $('.sContent__main-wrapper'),
 		top: 110,
-		bottomEnd: 100,
+		bottomEnd: 80,
 		
   });
 
