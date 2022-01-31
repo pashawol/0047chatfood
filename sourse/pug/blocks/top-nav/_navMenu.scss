@@ -1,6 +1,5 @@
-.menu{
+.menu {
 	@include media-breakpoint-up(lg) {
-
 		display: flex;
 		text-align: center;
 		@include roww(20px);
@@ -11,23 +10,18 @@
 	position: relative;
 	margin-bottom: 0;
 	max-width: 100%;
-	li{
-		
+	li {
 		// margin-left: 0;
 		// margin-right: 0;
 		padding: 0;
 	}
-	a{
+	a {
 		display: block;
 		padding: rem(20) calc(var(--bs-gutter-x) / 2);
 	}
 }
 
-
-
 @include media-breakpoint-down(lg) {
-
-	
 	.toggle-menu-mobile {
 		--h: #{rem(2)};
 		--color: #{$body-color};
@@ -35,19 +29,18 @@
 		&.on span {
 			--color: transparent;
 			&::before,
-			&::after{
+			&::after {
 				--color: #{$body-color};
-
 			}
 		}
 
-		&.on  { 
-			--position: 0; 
+		&.on {
+			--position: 0;
 			--rotate: 45deg;
 		}
 		display: block;
-		height: calc(var(--h)* 10);
-		position: relative; 
+		height: calc(var(--h) * 10);
+		position: relative;
 		font-size: 30px;
 		width: 1em;
 		cursor: pointer;
@@ -57,20 +50,20 @@
 			position: absolute;
 			left: 0;
 			background: $body-color;
-		} 
+		}
 		span {
 			@include a-cent(y);
 			display: block;
 		}
 
-		span:before { 
+		span:before {
 			top: var(--position);
-			transform: rotate3d(0,0,1, var(--rotate, 0));
+			transform: rotate3d(0, 0, 1, var(--rotate, 0));
 		}
 
 		span:after {
 			bottom: var(--position);
-			transform: rotate3d(0,0,1, calc(-1 * var(--rotate,0)));
+			transform: rotate3d(0, 0, 1, calc(-1 * var(--rotate, 0)));
 		}
 		span,
 		span:after,
@@ -80,9 +73,9 @@
 			height: var(--h);
 			background-color: var(--color);
 			transition: all 0.3s;
-			backface-visibility: hidden; 
+			backface-visibility: hidden;
 			transform-origin: 50% 50%;
-		} 
+		}
 	}
 
 	.menu-mobile {
@@ -95,42 +88,42 @@
 		// left: 0;
 		right: 0;
 		background-color: $body-bg;
-		padding-top: rem(100px);
-		.row{
+		padding-top: rem(65);
+		.row {
 			justify-content: center;
-			.col-auto{
+			.col-auto {
 				max-width: 50%;
 			}
 		}
-		&__btn{ 
+		&__btn {
 			max-width: 100%;
-			width: rem(246);
-			padding: 20px;
+			font-size: rem(16);
+			width: rem(152);
+			padding: 10px;
 		}
-		&:not(.active){
-			transform: translate3d( 0, -120%,0);
+		&:not(.active) {
+			transform: translate3d(0, -120%, 0);
 			--opacity: 0;
-			.toggle-menu-mobile{
+			.toggle-menu-mobile {
 				opacity: 0;
 			}
 		}
-		@include mt(.6s);
+		@include mt(0.6s);
 		will-change: transform;
 		text-align: center;
 
-		
-		.toggle-menu-mobile { 
+		.toggle-menu-mobile {
 			margin-left: -15%;
-			position: absolute; 
+			position: absolute;
 			left: 0;
 			right: auto;
-			color: #FFF;
+			color: #fff;
 			top: 10px;
-			z-index: 9999; 
-			
+			z-index: 9999;
+
 			span:after,
 			span:before {
-				--color: #FFF;
+				--color: #fff;
 			}
 		}
 		&__inner {
@@ -141,22 +134,21 @@
 			height: 100%;
 			display: flex;
 			flex-direction: column;
-			@include mt(.3s);
-			transition-delay: .4s;
+			@include mt(0.3s);
+			transition-delay: 0.4s;
 			opacity: var(--opacity);
-			.container{
+			.container {
 				display: flex;
 				flex-direction: column;
 				height: 100%;
 			}
 		}
 
-		&.active { 
+		&.active {
 			.toggle-menu-mobile {
 				opacity: 1;
 			}
 		}
-
 
 		ul {
 			position: relative;
@@ -170,7 +162,7 @@
 		li {
 			display: block;
 			margin: 0;
-			border-top: 1px solid rgba(255, 255, 255, .13);
+			border-top: 1px solid rgba(255, 255, 255, 0.13);
 
 			a {
 				// font-size: 16px;
@@ -179,27 +171,25 @@
 				font-weight: bold;
 				padding: 10px;
 				display: block;
-				
 			}
 		}
-		.soc{
+		.soc {
 			justify-content: center;
-			border-top: 1px solid #E8E8E8;
+			border-top: 1px solid #e8e8e8;
 			margin-top: 5vh;
 			padding-top: 5vh;
 			padding-bottom: 5vh;
 		}
-		&__mail{
+		&__mail {
 			display: inline-block;
 			color: $body-color;
 			opacity: 0.5;
-	
 		}
 	}
 }
 
-	.menu-mobile{
-		&__btn{
-			@extend .btn;
-		}
+.menu-mobile {
+	&__btn {
+		@extend .btn;
 	}
+}
