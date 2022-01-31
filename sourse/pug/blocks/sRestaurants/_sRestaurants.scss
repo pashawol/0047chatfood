@@ -12,7 +12,8 @@
 			margin-bottom: 0;
 		}
 		span {
-			@extend .btn-secondary;
+			display: inline-block;
+			background-color: $light;
 			font-weight: 600;
 			font-size: rem(16);
 			line-height: 100%;
@@ -80,7 +81,8 @@
 		margin-right: rem(20);
 		background-image: url(../img/svg/img-bg.svg);
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 98%;
+		background-position: center;
 		margin-top: auto;
 		margin-bottom: auto;
 		@include media-breakpoint-only(sm) {

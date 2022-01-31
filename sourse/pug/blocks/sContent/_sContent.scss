@@ -142,10 +142,15 @@
 		.social-block {
 			margin-bottom: 0;
 		}
-		h6 {
+		a {
 			line-height: 125%;
-			color: rgba($color: $body-color, $alpha: 0.5);
 			margin-bottom: 0;
+			color: rgba($color: $body-color, $alpha: 0.5);
+			padding: rem(5) 0;
+			&:hover {
+				color: rgba($color: $primary2, $alpha: 0.5);
+
+			}
 		}
 	}
 
@@ -207,6 +212,9 @@
 					}
 				}
 			}
+		}
+		.swiper-scrollbar {
+			margin-top: rem(15);
 		}
 	}
 
@@ -351,7 +359,8 @@
 		right: 17px;
 		padding: 0;
 		background-color: transparent;
-		&:hover, &:active {
+		&:hover,
+		&:active {
 			color: $primary;
 		}
 		.icon {

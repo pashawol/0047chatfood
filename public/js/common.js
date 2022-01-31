@@ -249,10 +249,10 @@ function eventHandler() {
 			nextEl: '.sTopDishes .swiper-button-next',
 			prevEl: '.sTopDishes .swiper-button-prev',
 		},
-		// scrollbar: {
-		// 	el: '.sTopDishes .swiper-scrollbar',
-		// 	draggable: true,
-		// }
+		scrollbar: {
+			el: '.sTopDishes .swiper-scrollbar',
+			draggable: true,
+		}
 	});
 	// modal window
 
